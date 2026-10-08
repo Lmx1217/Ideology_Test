@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: relative; /* 为绝对定位的子元素提供参考 */
+}
+
+canvas {
+    background-color: #000;
+    border: 1px solid #ddd;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* 确保按钮位于最上层 */
+}
+
+.boundary-toggle, .mobile-toggle {
+    margin-top: 20px;
+    font-size: 18px;
+    /* Toggle switch styling */
+}
+
+/* The switch - the box around the slider */
+.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.switch {
+    width: 51px;
+    height: 31px;
+    display: inline-block;
+    background-color: #e9e9eb;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    position: relative;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* The slider */
+.slider {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: calc(50% - 27px/2 - 10px);
+    top: calc(50% - 27px/2);
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.checkbox:checked + .switch {
+    background-color: #34C759;
+}
+
+.checkbox:checked + .switch .slider {
+    left: calc(50% - 27px/2 + 10px);
+    top: calc(50% - 27px/2);
+}
+
+.mobile-controls {
+    position: relative;
+    width: 200px; /* 放大容器的宽度 */
+    height: 200px; /* 放大容器的高度 */
+    margin: 20px auto 0;
+    background: transparent; /* 移除背景图片 */
+}
+
+.arrow-key {
+    position: absolute;
+    width: 70px; /* 放大按钮的宽度 */
+    height: 70px; /* 放大按钮的高度 */
+    background-color: #808080; /* 灰色背景 */
+    border-radius: 10px; /* 圆角按钮 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#upKey {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('arrowtriangle.up.fill.png'); /* 添加上箭头图标 */
+    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#leftKey {
+    top: 50%;
+    left: -20px; /* 调整左箭头的位置，增加间距 */
+    transform: translateY(-50%);
+    background-image: url('arrowtriangle.left.fill.png'); /* 添加左箭头图标 */
+    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#downKey {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('arrowtriangle.down.fill.png'); /* 添加下箭头图标 */
+    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#rightKey {
+    top: 50%;
+    right: -20px; /* 调整右箭头的位置，增加间距 */
+    transform: translateY(-50%);
+    background-image: url('arrowtriangle.right.fill.png'); /* 添加右箭头图标 */
+    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-repeat: no-repeat;
+    background-position: center;
+}
