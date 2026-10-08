@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start; /* 从顶部开始对齐 */
+    height: 100vh;
+    overflow: auto; /* 确保body可以滚动 */
+}
+
+.containerall {
+    background: white;
+    padding: 20px;
+    border-radius: 16px; /* 增加圆角度数 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    opacity: 0;
+}
+
+.note {
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-align: left;
+    opacity: 0;
+}
+
+.bignote {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: left;
+    opacity: 0;
+    font-weight: bold;
+}
+
+.inline-icon {
+    vertical-align: middle;
+    margin: 0 1px; /* 控制图片与文字的间距 */
+    height: 1.2em; /* 确保图标的高度与文字一致 */
+}
+
+@media (max-width: 600px) {
+    .containerall {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 32px;
+    }
+
+    .note {
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+
+    .bignote {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fade-in-text {
+    transition: opacity 0.1s ease-in;
+    opacity: 1;
+}

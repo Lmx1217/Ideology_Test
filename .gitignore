@@ -1,0 +1,27 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Local editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python virtual environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs
+*.log
