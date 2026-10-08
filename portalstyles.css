@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerall {
+    background: white;
+    padding: 20px;
+    border-radius: 16px; /* 增加圆角度数 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.option-button {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin: 10px auto;
+    border: none;
+    background-color: #007AFF;
+    color: white;
+    border-radius: 16px; /* 增加圆角度数 */
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.option-button1 {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin: 10px auto;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 16px; /* 增加圆角度数 */
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+}
+
+.option-button1:hover {
+    background-color: #545b62;
+}
+
+@media (max-width: 600px) {
+    .containerall {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 32px;
+    }
+
+    .option-button {
+        width: 95%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .option-button1 {
+        width: 95%;
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+/* 新的动画样式 */
+@keyframes expandAndFade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* 为 .option-button 添加动画类 */
+.option-button.animate {
+    animation: expandAndFade 1s forwards; /* 1秒的动画，动画结束时保持最终状态 */
+}
+
+/* 隐藏但保持占位的样式 */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

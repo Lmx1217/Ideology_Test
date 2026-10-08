@@ -1,0 +1,52 @@
+/* 全局设置 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+.version-history {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.version {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* 初始透明度 */
+    transform: scale(0.8); /* 初始缩小尺寸 */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* 添加过渡效果 */
+}
+
+.version-number {
+    font-size: 1.3em;
+    color: #007AFF;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.version-details {
+    font-size: 1em;
+    text-align: left;
+}
+
+.version:last-child {
+    margin-bottom: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
