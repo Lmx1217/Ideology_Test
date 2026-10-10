@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>意识形态测试</title>
+    <title data-i18n="title">Where You Stand?</title>
     <link rel="stylesheet" href="portalstyles.css?v=1">
     <link rel="stylesheet" href="daynight/style.css">
 </head>
@@ -75,17 +75,17 @@
         </div>
       </div>
     <div class="containerall">
-        <h1 onclick="showVersion()">意识形态测试</h1>
+        <h1 data-i18n="title" onclick="showVersion()">Where You Stand?</h1>
         <div id="options-container">
-            <button class="option-button" onclick="startTest()">开始测试</button>
-            <button class="option-button1" onclick="games()">小游戏</button>
-            <button class="option-button1" onclick="showNotes()">如何获得准确的结果</button>
-            <button class="option-button1" onclick="history()">版本历史记录</button>
-            <button class="option-button1" onclick="giveFeedback()">反馈问题</button>
-            <button class="option-button1" onclick="switchToEnglish()">English version</button>
+            <button class="option-button" data-i18n="startTest" onclick="startTest()">Start</button>
+            <button class="option-button1" data-i18n="miniGames" onclick="games()">Mini Games</button>
+            <button class="option-button1" data-i18n="notes" onclick="showNotes()">How to Get Accurate Results</button>
+            <button class="option-button1" data-i18n="versionHistory" onclick="history()">Version History</button>
+            <button class="option-button1" data-i18n="feedback" onclick="giveFeedback()">Report</button>
+            <button class="option-button1" data-i18n="switchLanguage" onclick="switchLanguage()">中文</button>
         </div>
     </div>
-    <script src="portalscript.js"></script>
+    <script src="portalscript.js?v=4"></script>
     <script src="daynight/script.js"></script>
 </body>
 </html>
