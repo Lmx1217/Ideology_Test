@@ -25,3 +25,9 @@ __pycache__/
 
 # Logs
 *.log
+
+# Local instructions and review working notes
+AGENTS.md
+[Rr][Ee][Aa][Dd][Mm][Ee]
+[Rr][Ee][Aa][Dd][Mm][Ee].*
+/docs/en-US-review-social-democracy.md
