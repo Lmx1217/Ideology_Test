@@ -19,7 +19,9 @@
   }
 
   function belongsOnPage(record, entry, section, status) {
-    return reviewOf(record, entry, section).status === status;
+    // Retain retired IDs internally so old records still resolve to their source.
+    // Shared copy is reviewed only at the original entry, on any status page.
+    return !entry.duplicateOf && reviewOf(record, entry, section).status === status;
   }
 
   function updateRecord(record, patch, entry, section, time = new Date().toISOString()) {
@@ -63,6 +65,21 @@
   }
 
   function makeBackup(reviews) { return { app: APP, version: 1, exportedAt: new Date().toISOString(), reviews }; }
+  // Browser persistence keeps historical records; downloads include only copy
+  // retained on the three current review pages, including untouched proposals.
+  function makeCurrentBackup(batches, reviews, time = new Date().toISOString()) {
+    const current = {};
+    for (const batch of batches) {
+      if (batch.archived) continue;
+      for (const section of batch.sections) for (const entry of section.entries) {
+        if (entry.duplicateOf) continue;
+        const key = keyOf(batch, entry);
+        // An untouched proposal must never outrank a real decision on import.
+        current[key] = reviews[key] || updateRecord(null, {}, entry, section, '1970-01-01T00:00:00.000Z');
+      }
+    }
+    return { app: APP, version: 1, exportedAt: time, reviews: current };
+  }
   function candidateFeedback(source) {
     return (source.alternatives || []).map(a => `\n\n同样可用的英文（${a.id}）：\n${a.en}\n选择说明：\n${a.note}`).join('');
   }
@@ -80,7 +97,7 @@
     }
     return groups.length ? `# 中英文文案审查反馈\n\n导出时间：${time}\n\n以下是用户在本地审查页中的标记、选择、修改与批注。请结合状态逐条处理；“通过”仅指“当前采用的英文”，不代表通过全部候选。此文件不授权发布正式网站。\n\n${groups.join('\n\n')}` : null;
   }
-  const api = { APP, STATUSES, keyOf, choicesOf, reviewOf, belongsOnPage, updateRecord, validateBackup, mergeRecords, makeBackup, feedbackText };
+  const api = { APP, STATUSES, keyOf, choicesOf, reviewOf, belongsOnPage, updateRecord, validateBackup, mergeRecords, makeBackup, makeCurrentBackup, feedbackText };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.ReviewCore = api;
 })(typeof window === 'undefined' ? {} : window);
