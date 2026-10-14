@@ -1,61 +1,5 @@
 let path = ['initial']; // 用于保存用户选择的路径
 
-function loadQuestion(questionKey) {
-    const questionData = questions[questionKey];
-    document.getElementById('question').innerText = questionData.question;
-
-    const optionsContainer = document.getElementById('options-container');
-    optionsContainer.innerHTML = '';
-
-    for (const [key, value] of Object.entries(questionData.options)) {
-        const button = document.createElement('button');
-        button.className = 'option-button';
-        button.innerText = value;
-        button.onclick = () => selectOption(key);
-        optionsContainer.appendChild(button);
-    }
-
-    if (path.length > 1) {
-        const backButton = document.createElement('button');
-        backButton.className = 'option-button back-button';
-        backButton.innerText = '后退';
-        backButton.onclick = () => goBack();
-        optionsContainer.appendChild(backButton);
-    }
-
-    document.getElementById('result-image').style.display = 'none'; // 隐藏结果图片
-}
-
-function showLoading(callback) {
-    const questionContainer = document.getElementById('question-container');
-    const optionsContainer = document.getElementById('options-container');
-    const loadingContainer = document.getElementById('loading-container');
-    const progressBar = document.querySelector('.progress');
-    const backButton = document.getElementById('back-button');
-
-    questionContainer.style.display = 'none';
-    optionsContainer.style.display = 'none';
-    loadingContainer.style.display = 'block';
-    progressBar.style.width = '0';
-
-    backButton.style.display = 'block';
-
-    // 使用 requestAnimationFrame 确保动画开始
-    requestAnimationFrame(() => {
-        const randomTime = Math.random() * 1500 + 500; // 随机时间在 0.5s 到 2s 之间
-        progressBar.style.transition = `width ${randomTime}ms ease`;
-        progressBar.style.width = '100%';
-
-        setTimeout(() => {
-            loadingContainer.style.display = 'none';
-            questionContainer.style.display = 'block';
-            optionsContainer.style.display = 'block';
-            backButton.style.display = path.length > 1 ? 'block' : 'none';
-            callback();
-        }, randomTime);
-    });
-}
-
 let loadingTimeout;
 let loadingAnimationFrame;
 let previousPath = [];
@@ -104,9 +48,10 @@ function selectOption(option) {
             path.push(nextKey);
             loadQuestion(nextKey);
         } else if (questions[nextKey].result) {
-            document.getElementById('question').innerText = questions[nextKey].result;
+            document.getElementById('question').innerText = SiteI18n.resultText(nextKey, questions[nextKey].result);
 
             const resultImage = document.getElementById('result-image');
+            resultImage.alt = SiteI18n.resultImageAlt(nextKey, 'Result Image');
             if (questions[nextKey].image) {
                 resultImage.src = questions[nextKey].image;
                 resultImage.style.display = 'block';
@@ -120,7 +65,7 @@ function selectOption(option) {
             // 插入按钮
             const restartButton = document.createElement('button');
             restartButton.className = 'option-button restart-button';
-            restartButton.innerText = '再来一次';
+            restartButton.innerText = SiteI18n.ui('restart');
             restartButton.onclick = () => restartQuiz();
             optionsContainer.appendChild(restartButton);
 
@@ -132,7 +77,7 @@ function selectOption(option) {
 
 function loadQuestion(questionKey) {
     const questionData = questions[questionKey];
-    document.getElementById('question').innerText = questionData.question;
+    document.getElementById('question').innerText = SiteI18n.questionText(questionKey, questionData.question);
 
     const optionsContainer = document.getElementById('options-container');
     optionsContainer.innerHTML = '';
@@ -140,7 +85,7 @@ function loadQuestion(questionKey) {
     for (const [key, value] of Object.entries(questionData.options)) {
         const button = document.createElement('button');
         button.className = 'option-button';
-        button.innerText = value;
+        button.innerText = SiteI18n.optionText(questionKey, key, value);
         button.onclick = () => selectOption(key);
         optionsContainer.appendChild(button);
     }
@@ -190,9 +135,10 @@ function goBack() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    SiteI18n.applyPageLanguage();
     loadQuestion('initial');
 });
 
 function showVersion() {
-    window.location.href = 'index.html';
+    window.location.href = SiteI18n.href('index.html');
 }

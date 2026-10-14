@@ -89,6 +89,24 @@ h1 {
     margin: 10px auto; /* 确保按钮居中 */
 }
 
+/* Longer English questions must remain reachable on short and narrow screens. */
+html[lang="en"] body {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    box-sizing: border-box;
+    padding: 24px 0;
+}
+
+html[lang="en"] .containerall {
+    box-sizing: border-box;
+}
+
+html[lang="en"] .restart-button {
+    width: fit-content;
+    max-width: 95%;
+}
+
 @media (max-width: 600px) {
     .containerall {
         padding: 10px;

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>翻译审查 · Ideology Test</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js?v=20261013-free-market" defer></script>
+  <script src="review-core.js?v=20261013-current-backup" defer></script>
+  <script src="app.js?v=20261013-current-backup" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到审查内容</a>
+  <main id="content" tabindex="-1">
+    <header class="page-header">
+      <div><h1 id="page-title">翻译审查</h1><p class="subtitle">中文在左，英文在右。直接往下看，随手修改或批注。<br>有同样合适的表达时会并列展示，可点击采用。通过仅针对当前采用的英文。</p></div>
+      <button id="export-feedback" class="primary-button">导出反馈</button>
+    </header>
+    <p id="save-status" role="status">修改和批注自动保存在此浏览器</p>
+    <nav class="page-links" aria-label="审查页面">
+      <a href="#/pending" data-page="pending">待审查</a>
+      <a href="#/changes" data-page="changes">要改</a>
+      <a href="#/approved" data-page="approved">已通过</a>
+    </nav>
+    <div id="storage-warning" class="storage-warning" role="alert" hidden></div>
+    <div id="review-content"></div>
+    <footer class="page-footer"><span>需要交给 AI 时，点击“导出反馈”。</span><button id="backup-open" class="text-button">备份与导入</button></footer>
+  </main>
+  <dialog id="backup-dialog" aria-labelledby="backup-title">
+    <div class="dialog-header"><h2 id="backup-title">保留你的审查记录</h2><button id="backup-close" class="icon-button" aria-label="关闭备份窗口">×</button></div>
+    <p>记录保存在当前浏览器中。备份包含当前「待审查」「要改」「已通过」三个页面保留的全部文案、修改和批注；已移除的文案不会导出。</p>
+    <button id="download-backup" class="primary-button">下载全部记录的备份</button>
+    <hr>
+    <label class="field-label" for="import-file">从备份恢复</label>
+    <p class="muted">导入本页导出的 JSON 备份。同一条记录以修改时间较新的为准，其他记录保留。</p>
+    <input id="import-file" type="file" accept=".json,application/json">
+    <p id="import-status" role="status"></p>
+  </dialog>
+  <dialog id="feedback-dialog" aria-labelledby="feedback-title">
+    <div class="dialog-header"><h2 id="feedback-title">把反馈交给 AI</h2><button id="feedback-close" class="icon-button" aria-label="关闭反馈窗口">×</button></div>
+    <p>这里汇总了已标记、已修改或有批注的文案。复制后发给 AI，也可以下载保存。</p>
+    <textarea id="feedback-text" aria-label="审查反馈内容" readonly></textarea>
+    <div class="feedback-actions"><button id="feedback-copy" class="primary-button">复制反馈</button><button id="feedback-download" class="quiet-button">下载反馈文件</button></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><p>请允许浏览器运行 JavaScript，以查看文案并保存批注。</p></noscript>
+</body>
+</html>
