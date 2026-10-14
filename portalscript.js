@@ -41,7 +41,7 @@ function showNotes() {
 }
 
 function history() {
-    window.location.href = 'history.html';
+    window.location.href = SiteI18n.href('history.html');
 }
 
 function giveFeedback() {
