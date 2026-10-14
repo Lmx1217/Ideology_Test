@@ -315,8 +315,10 @@ test('production copy contains only source/selected-English pairs; every approve
     const used = new Set();
     for (const key of ['title', 'startTest', 'miniGames', 'notes', 'versionHistory', 'feedback',
         'switchLanguage', 'loading', 'back', 'restart', 'feedbackMessage', 'versionLabel']) used.add(i18n.ui(key));
-    const notesHtml = fs.readFileSync(path.join(__dirname, 'note.html'), 'utf8');
-    for (const [, key] of notesHtml.matchAll(/data-i18n(?:-alt)?="([^"]+)"/g)) used.add(i18n.ui(key));
+    for (const page of ['note.html', 'history.html']) {
+        const html = fs.readFileSync(path.join(__dirname, page), 'utf8');
+        for (const [, key] of html.matchAll(/data-i18n(?:-alt)?="([^"]+)"/g)) used.add(i18n.ui(key));
+    }
     for (const [key, question] of Object.entries(questions)) {
         if (question.question) {
             used.add(i18n.questionText(key, question.question));
