@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贪食蛇</title>
+    <title>Snake</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <div class="score">分数: <span id="score">0</span></div>
-        <button id="restartButton" onclick="restartGame()">重新开始</button>
+        <div class="score">Score: <span id="score">0</span></div>
+        <button id="restartButton" onclick="restartGame()">Restart</button>
         
         <div class="boundary-toggle">
-            边界: 
+            Boundaries:
             <input type="checkbox" class="checkbox" id="boundarySwitch" onclick="toggleBoundary()">
             <label class="switch" for="boundarySwitch">
                 <span class="slider"></span>
@@ -21,7 +21,7 @@
         </div>
         
         <div class="mobile-toggle">
-            手机模式: 
+            Mobile Mode:
             <input type="checkbox" class="checkbox" id="mobileSwitch" onclick="toggleMobileMode()">
             <label class="switch" for="mobileSwitch">
                 <span class="slider"></span>
