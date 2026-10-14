@@ -1402,6 +1402,14 @@ window.APPROVED_TRANSLATIONS = {
         "zh": "•最后的结果对于越不了解政治的人可能越准确，因为不了解政治的人通常没有什么独特的观点组合，因此一共的103个结果大概率能包括这些人的想法",
         "en": "• The quiz may be more accurate for people who are less familiar with politics. Their views tend to fall into more common combinations, making them more likely to fit one of the quiz’s 103 possible results."
     },
+    "history-01/v1.7.0a-heading": {
+        "zh": "1.7.0a-2026.10.13",
+        "en": "1.7.0a — October 13, 2026"
+    },
+    "history-01/v1.7.0a-english": {
+        "zh": "•增加整个网站的英文本地化。",
+        "en": "• Added full English support across the website."
+    },
     "history-01/v1.6.0a-heading": {
         "zh": "1.6.0a-2024.7.25",
         "en": "1.6.0a — July 25, 2024"

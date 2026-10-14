@@ -29,6 +29,8 @@
         notesTitleActions: 'notes-01/title-actions',
         notesResultsHeading: 'notes-01/results-heading',
         notesResultsNote: 'notes-01/results-note',
+        history170aHeading: 'history-01/v1.7.0a-heading',
+        history170aEnglish: 'history-01/v1.7.0a-english',
         history160aHeading: 'history-01/v1.6.0a-heading',
         history160aResults: 'history-01/v1.6.0a-results',
         history160aMiniGames: 'history-01/v1.6.0a-minigames',
