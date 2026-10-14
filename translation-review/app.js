@@ -1,7 +1,8 @@
 (() => {
   'use strict';
   const C = window.ReviewCore;
-  const batches = window.REVIEW_BATCHES;
+  // Completed batches stay in the source for stable IDs and shared-copy lookup.
+  const batches = window.REVIEW_BATCHES.filter(batch => !batch.archived);
   const STORAGE_KEY = `${C.APP}:v1`;
   const $ = id => document.getElementById(id);
   const escape = text => String(text).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
@@ -74,15 +75,15 @@
     const tag = entry.priority ? '<span class="tag priority">重点审查</span>' : '';
     const selected = entry.selected ? '<span class="tag">路线所选</span>' : '';
     const previous = r.stale ? `<div class="stale-warning">AI 原稿、候选或说明已更新，请重新审查。你的修改和批注已保留。<details><summary>上次审查的英文及候选</summary><p lang="en">${escape(reviews[key].source.en)}</p>${(reviews[key].source.alternatives || []).map(a => `<p lang="en">${escape(a.en)}</p><p>${escape(a.note)}</p>`).join('')}</details></div>` : '';
-    return `<article class="entry" id="${escape(cardId(batch, entry))}" data-key="${escape(key)}" data-status="${r.status}" aria-label="${escape(entry.id + ' ' + entry.label)}">
+    return `<article class="entry" id="${escape(cardId(batch, entry))}" data-key="${escape(key)}" data-status="${r.status}" aria-label="${escape(entry.zh)}">
       <div class="entry-top"><div class="entry-tags">${tag}${selected}</div><span class="entry-status ${r.status}">${C.STATUSES[r.status]}</span></div>${previous}
       <div class="comparison"><div class="chinese"><div class="language-label">${entry.id === 'X3' ? '项目原文' : '中文原文'}</div><p class="copy">${escape(entry.zh)}</p></div>
       <div class="english"><div class="language-label"><span class="english-label">${englishLabel(r)}</span><button class="mini-button" data-action="edit">${isEditing ? '完成编辑' : '修改英文'}</button></div>
-      ${isEditing ? `<textarea class="editor" data-field="draft" aria-label="${escape(entry.id)} 英文草稿" lang="en" spellcheck="true">${escape(r.text)}</textarea><div class="editor-footer"><span>自动保存 · 改后需重新确认</span><button class="mini-button" data-action="restore">恢复 AI 原稿</button></div>` : !entry.alternatives?.length || !r.choiceId ? `<p class="copy" lang="en">${escape(r.text)}</p>` : ''}
+      ${isEditing ? `<textarea class="editor" data-field="draft" aria-label="英文草稿：${escape(entry.zh)}" lang="en" spellcheck="true">${escape(r.text)}</textarea><div class="editor-footer"><span>自动保存 · 改后需重新确认</span><button class="mini-button" data-action="restore">恢复 AI 原稿</button></div>` : !entry.alternatives?.length || !r.choiceId ? `<p class="copy" lang="en">${escape(r.text)}</p>` : ''}
       ${renderChoices(entry, r)}
       ${!entry.alternatives?.length && (r.edited || isEditing) ? `<details class="original"><summary>查看 AI 原稿</summary><p lang="en">${escape(entry.en)}</p></details>` : ''}</div></div>
       ${entry.note ? `<div class="entry-note"><strong>措辞说明</strong>${escape(entry.note)}</div>` : ''}
-      <div class="entry-bottom"><div class="status-actions" role="group" aria-label="${escape(entry.id)} 审查状态">${Object.entries(C.STATUSES).map(([status, label]) => `<button data-action="status" data-status="${status}" aria-pressed="${r.status === status}">${status === 'approved' ? '✓ ' : ''}${label}</button>`).join('')}</div><button class="comment-button ${r.note ? 'has-comment' : ''}" data-action="comment" aria-expanded="${showComment}">${r.note ? '已有批注' : showComment ? '收起批注' : '+ 写批注'}</button></div>
+      <div class="entry-bottom"><div class="status-actions" role="group" aria-label="审查状态：${escape(entry.zh)}">${Object.entries(C.STATUSES).map(([status, label]) => `<button data-action="status" data-status="${status}" aria-pressed="${r.status === status}">${status === 'approved' ? '✓ ' : ''}${label}</button>`).join('')}</div><button class="comment-button ${r.note ? 'has-comment' : ''}" data-action="comment" aria-expanded="${showComment}">${r.note ? '已有批注' : showComment ? '收起批注' : '+ 写批注'}</button></div>
       <div class="comment-box" ${showComment ? '' : 'hidden'}><label class="field-label" for="note-${escape(batch.id)}--${escape(entry.id)}">我的批注</label><textarea id="note-${escape(batch.id)}--${escape(entry.id)}" data-field="note" placeholder="例如：保留这个意思，但换成更自然的说法。">${escape(r.note)}</textarea></div>
     </article>`;
   }
@@ -102,8 +103,7 @@
       }).join('');
       if (!groups) return '';
       return `<div class="review-set">${groups}
-      <details class="source-details"><summary>路线与来源</summary><p>${escape(batch.route.join(' → '))}</p>
-        <p>“路线所选”只标明这次走过的答案，不代表正确答案。</p>
+      <details class="source-details"><summary>来源</summary>
         <p>${batch.sections.map(section => escape(section.sources.join(' · '))).join(' / ')}</p>
         <div>${(batch.references || []).filter(r => /^https:\/\//.test(r.url)).map(r => `<a href="${escape(r.url)}" target="_blank" rel="noopener noreferrer">${escape(r.label)}</a>`).join(' · ')}</div>
       </details></div>`;
@@ -202,7 +202,7 @@
   $('feedback-download').addEventListener('click', () => download(`translation-feedback-${dateTag()}.md`, $('feedback-text').value, 'text/markdown;charset=utf-8'));
   $('backup-open').addEventListener('click', () => $('backup-dialog').showModal());
   $('backup-close').addEventListener('click', () => $('backup-dialog').close());
-  $('download-backup').addEventListener('click', () => { download(`translation-review-backup-${dateTag()}.json`, JSON.stringify(C.makeBackup(reviews), null, 2), 'application/json'); notify('备份已导出。'); });
+  $('download-backup').addEventListener('click', () => { download(`translation-review-backup-${dateTag()}.json`, JSON.stringify(C.makeCurrentBackup(batches, reviews), null, 2), 'application/json'); notify('当前保留的文案及审查记录已导出。'); });
   $('import-file').addEventListener('change', async event => {
     const file = event.target.files[0]; if (!file) return;
     try {
