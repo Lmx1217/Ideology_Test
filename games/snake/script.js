@@ -1,59 +1,59 @@
-// 获取画布元素和上下文
+// Get the canvas element and rendering context
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-// 定义每个方块的大小
+// Define the size of each grid cell
 const box = 20;
 
-// 初始化变量
+// Initialize variables
 let snake = [];
 let food;
 let score;
 let d;
 let game;
-let boundaryEnabled = false; // 用于表示边界是否开启
-let mobileModeEnabled = false; // 用于表示手机模式是否开启
-let gameStarted = false; // 用于表示游戏是否开始
+let boundaryEnabled = false; // Track whether boundaries are enabled
+let mobileModeEnabled = false; // Track whether mobile mode is enabled
+let gameStarted = false; // Track whether the game has started
 
-// 初始化游戏
+// Initialize the game
 function init() {
     snake = [];
     snake[0] = { x: 9 * box, y: 10 * box };
-    // 初始化蛇的初始位置
+    // Set the snake's starting position
 
     generateFood();
-    // 生成食物
+    // Generate food
 
     score = 0;
-    d = null; // 初始化方向为空
-    gameStarted = false; // 初始化时游戏未开始
+    d = null; // Start with no direction
+    gameStarted = false; // Keep the game idle during initialization
 
     document.getElementById('score').innerText = score;
-    // 更新分数显示
+    // Update the score display
 
     document.getElementById('restartButton').style.display = 'none';
-    // 隐藏重新开始按钮
+    // Hide the restart button
 
     document.getElementById('boundarySwitch').parentElement.style.display = 'block';
     document.getElementById('mobileSwitch').parentElement.style.display = 'block';
-    // 显示边界开关和手机模式开关
+    // Show the boundary and mobile mode switches
 
     if (game) clearInterval(game);
     game = setInterval(draw, mobileModeEnabled ? 200 : 150);
-    // 设置游戏循环，根据手机模式调整速度
+    // Set the game loop speed based on mobile mode
 }
 
-// 监听键盘按键事件
+// Listen for keyboard input
 document.addEventListener('keydown', direction);
 
-// 更新方向
+// Update the direction
 function direction(event) {
     let key = event.keyCode;
     if (!gameStarted) {
-        gameStarted = true; // 按下方向键后游戏开始
+        gameStarted = true; // Start the game when a direction key is pressed
         document.getElementById('boundarySwitch').parentElement.style.display = 'none';
         document.getElementById('mobileSwitch').parentElement.style.display = 'none';
-        // 隐藏边界开关和手机模式开关
+        // Hide the boundary and mobile mode switches
 
         if (key === 37) {
             d = 'LEFT';
@@ -75,16 +75,16 @@ function direction(event) {
             d = 'DOWN';
         }
     }
-    // 根据按键设置方向，防止蛇反向移动
+    // Set the direction from keyboard input and prevent reversing
 }
 
-// 移动蛇（手机模式下使用）
+// Move the snake using mobile controls
 function moveSnake(direction) {
     if (!gameStarted) {
-        gameStarted = true; // 按下方向键后游戏开始
+        gameStarted = true; // Start the game when a direction button is pressed
         document.getElementById('boundarySwitch').parentElement.style.display = 'none';
         document.getElementById('mobileSwitch').parentElement.style.display = 'none';
-        // 隐藏边界开关和手机模式开关
+        // Hide the boundary and mobile mode switches
 
         d = direction;
     } else {
@@ -99,10 +99,10 @@ function moveSnake(direction) {
         }
     }
     updateButtonStates();
-    // 根据按键设置方向，防止蛇反向移动
+    // Set the direction from button input and prevent reversing
 }
 
-// 更新按钮状态
+// Update button states
 function updateButtonStates() {
     document.getElementById('upKey').disabled = d === 'DOWN';
     document.getElementById('downKey').disabled = d === 'UP';
@@ -110,31 +110,31 @@ function updateButtonStates() {
     document.getElementById('rightKey').disabled = d === 'LEFT';
 }
 
-// 切换手机模式
+// Toggle mobile mode
 function toggleMobileMode() {
     mobileModeEnabled = document.getElementById('mobileSwitch').checked;
     document.getElementById('mobileControls').style.display = mobileModeEnabled ? 'block' : 'none';
-    // 根据手机模式的状态显示或隐藏虚拟按钮
-    document.removeEventListener('keydown', direction); // 移除键盘事件监听
+    // Show or hide virtual buttons based on mobile mode
+    document.removeEventListener('keydown', direction); // Remove the keyboard listener
     if (!mobileModeEnabled) {
-        document.addEventListener('keydown', direction); // 如果不是手机模式，重新添加键盘事件监听
+        document.addEventListener('keydown', direction); // Restore the keyboard listener outside mobile mode
     }
     init();
-    // 重新初始化游戏以应用新的速度和控制方式
+    // Reinitialize the game to apply the new speed and controls
 }
 
-// 切换边界状态
+// Toggle boundaries
 function toggleBoundary() {
     boundaryEnabled = document.getElementById('boundarySwitch').checked;
 }
 
-// 绘制游戏
+// Draw the game
 function draw() {
-    // 清空画布
+    // Clear the canvas
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // 绘制蛇
+    // Draw the snake
     for (let i = 0; i < snake.length; i++) {
         ctx.fillStyle = (i === 0) ? '#00FF00' : '#FFFFFF';
         ctx.fillRect(snake[i].x, snake[i].y, box, box);
@@ -142,26 +142,26 @@ function draw() {
         ctx.strokeRect(snake[i].x, snake[i].y, box, box);
     }
 
-    // 绘制食物
+    // Draw the food
     ctx.fillStyle = '#FF0000';
     ctx.fillRect(food.x, food.y, box, box);
 
-    // 如果游戏未开始，则不移动蛇
+    // Keep the snake still until the game starts
     if (!gameStarted || d === null) return;
 
-    // 获取蛇头的当前位置
+    // Get the current position of the snake's head
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
-    // 根据方向移动蛇头
+    // Move the snake's head in the current direction
     if (d === 'LEFT') snakeX -= box;
     if (d === 'UP') snakeY -= box;
     if (d === 'RIGHT') snakeX += box;
     if (d === 'DOWN') snakeY += box;
 
-    // 实现穿墙逻辑或边界碰撞逻辑
+    // Handle wrapping or boundary collisions
     if (boundaryEnabled) {
-        // 边界开启时，蛇撞到墙壁则死亡
+        // End the game if the snake hits a wall while boundaries are enabled
         if (snakeX < 0 || snakeX >= canvas.width || snakeY < 0 || snakeY >= canvas.height) {
             clearInterval(game);
             document.getElementById('restartButton').style.display = 'block';
@@ -170,7 +170,7 @@ function draw() {
             return;
         }
     } else {
-        // 边界关闭时，蛇撞到墙壁从另一边出现
+        // Wrap to the opposite edge when boundaries are disabled
         if (snakeX < 0) {
             snakeX = canvas.width - box;
         } else if (snakeX >= canvas.width) {
@@ -183,41 +183,41 @@ function draw() {
         }
     }
 
-    // 检查蛇是否吃到食物
+    // Check whether the snake has eaten the food
     if (snakeX === food.x && snakeY === food.y) {
         score++;
         document.getElementById('score').innerText = score;
         generateFood();
-        // 生成新的食物
+        // Generate new food
     } else {
         snake.pop();
-        // 移除蛇尾
+        // Remove the snake's tail
     }
 
-    // 创建新的蛇头
+    // Create the new head
     let newHead = {
         x: snakeX,
         y: snakeY
     };
 
-    // 检查蛇是否撞到自己
+    // Check whether the snake has collided with itself
     if (collision(newHead, snake)) {
         clearInterval(game);
         document.getElementById('restartButton').style.display = 'block';
         document.getElementById('boundarySwitch').parentElement.style.display = 'block';
         document.getElementById('mobileSwitch').parentElement.style.display = 'block';
-        // 显示边界开关和手机模式开关
+        // Show the boundary and mobile mode switches
         return;
     }
 
     snake.unshift(newHead);
-    // 添加新的蛇头到蛇身上
+    // Add the new head to the snake's body
     if (mobileModeEnabled) {
-        updateButtonStates(); // 更新按钮状态
+        updateButtonStates(); // Update button states
     }
 }
 
-// 检查碰撞
+// Check for collisions
 function collision(head, array) {
     for (let i = 0; i < array.length; i++) {
         if (head.x === array[i].x && head.y === array[i].y) {
@@ -227,7 +227,7 @@ function collision(head, array) {
     return false;
 }
 
-// 生成食物
+// Generate food
 function generateFood() {
     let validPosition = false;
     while (!validPosition) {
@@ -236,14 +236,14 @@ function generateFood() {
             y: Math.floor(Math.random() * 19 + 1) * box
         };
         validPosition = !collision(food, snake);
-        // 确保食物不生成在蛇身上
+        // Ensure food does not appear on the snake's body
     }
 }
 
-// 重新开始游戏
+// Restart the game
 function restartGame() {
     init();
 }
 
-// 初始化
+// Initialize
 init();
