@@ -1,4 +1,5 @@
-// Approved selections from the 2026-10-13 review backups. Keep review IDs stable.
+// English site copy, including approved selections from the 2026-10-13 review backups.
+// Keep review IDs stable for entries imported from those backups.
 // Only the Chinese source and selected English belong here; review notes stay in the review tool.
 window.APPROVED_TRANSLATIONS = {
     "social-democracy-01/H1": {
@@ -1336,5 +1337,69 @@ window.APPROVED_TRANSLATIONS = {
     "free-market-01/R11": {
         "zh": "你的意识形态是：无政府共产主义",
         "en": "Your result: Anarcho-Communism"
+    },
+    "notes-01/title": {
+        "zh": "笔记",
+        "en": "How to Get Accurate Results"
+    },
+    "notes-01/test-tips": {
+        "zh": "-测试技巧",
+        "en": "Tips for Taking the Quiz"
+    },
+    "notes-01/notation": {
+        "zh": "•文字中“/” 表示或，“、” 表示并列",
+        "en": "• A slash (/) means “or.” Commas separate items in a list."
+    },
+    "notes-01/wording": {
+        "zh": "•所有题目、选项的每个字都经过多次审查，阅读时请不要遗漏任何字",
+        "en": "• Every word in the questions and answer choices has been reviewed multiple times. Read each one carefully."
+    },
+    "notes-01/concise-copy": {
+        "zh": "•所有题目、选项中的文字都精简到了最简，阅读时请不要遗漏任何字",
+        "en": "• The questions and answer choices are written as concisely as possible, so pay attention to every word."
+    },
+    "notes-01/elimination": {
+        "zh": "•比较复杂或纠结的选项，尝试使用排除法",
+        "en": "• If the choices are confusing or you’re torn between them, try ruling out the ones that don’t fit your views."
+    },
+    "notes-01/try-both": {
+        "zh": "•如果实在不知道要选哪个，您可以分别做两次测试，两次测试中分别选择您所纠结的不同的选项",
+        "en": "• If you still can’t decide between two choices, take the quiz twice, choosing a different answer each time."
+    },
+    "notes-01/review-answers": {
+        "zh": "•如果在某一时刻突然感觉问题都变得更难懂，而且大量的问题自己之前从来没有考虑过，那么建议您重新审查一遍之前选择的选项，因为如果出现这种情况，大概率是之前的某个选项选错了",
+        "en": "• If the questions suddenly become harder to understand and many ask about issues you’ve never considered, review your earlier answers. This usually means you selected an earlier answer by mistake."
+    },
+    "notes-01/site-tips": {
+        "zh": "-操作技巧",
+        "en": "Using the Site"
+    },
+    "notes-01/feedback": {
+        "zh": "•任何问题或建议请在主界面点击“反馈问题”按钮",
+        "en": "• To report a problem or share a suggestion, select Feedback on the home page."
+    },
+    "notes-01/browser-back-prefix": {
+        "zh": "•在大部分界面点击（多次点击）浏览器自带的“",
+        "en": "• On most pages, use your browser’s "
+    },
+    "notes-01/browser-back-suffix": {
+        "zh": "”按钮都能返回到主界面",
+        "en": " button to return to the home page. You may need to click it more than once."
+    },
+    "notes-01/browser-back-alt": {
+        "zh": "返回按钮",
+        "en": "Back"
+    },
+    "notes-01/title-actions": {
+        "zh": "•在主界面点击标题时显示软件版本，在测试页面点击标题时则返回主界面",
+        "en": "• Click the title on the home page to see the version number. On the quiz page, click the title to return to the home page."
+    },
+    "notes-01/results-heading": {
+        "zh": "-声明",
+        "en": "About Your Results"
+    },
+    "notes-01/results-note": {
+        "zh": "•最后的结果对于越不了解政治的人可能越准确，因为不了解政治的人通常没有什么独特的观点组合，因此一共的103个结果大概率能包括这些人的想法",
+        "en": "• The quiz may be more accurate for people who are less familiar with politics. Their views tend to fall into more common combinations, making them more likely to fit one of the quiz’s 103 possible results."
     }
 };

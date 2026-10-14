@@ -23,7 +23,7 @@ function load({ search = '', saved = null, blockedStorage = false } = {}) {
                 }
             }
         },
-        document: { documentElement: {}, querySelectorAll: () => elements }
+        document: { documentElement: {}, querySelectorAll: selector => selector === '[data-i18n]' ? elements : [] }
     });
     for (const file of ['approved-translations.js', 'i18n.js', 'logical.js']) {
         vm.runInContext(fs.readFileSync(path.join(__dirname, file), 'utf8'), context, { filename: file });
@@ -315,6 +315,8 @@ test('production copy contains only source/selected-English pairs; every approve
     const used = new Set();
     for (const key of ['title', 'startTest', 'miniGames', 'notes', 'versionHistory', 'feedback',
         'switchLanguage', 'loading', 'back', 'restart', 'feedbackMessage', 'versionLabel']) used.add(i18n.ui(key));
+    const notesHtml = fs.readFileSync(path.join(__dirname, 'note.html'), 'utf8');
+    for (const [, key] of notesHtml.matchAll(/data-i18n(?:-alt)?="([^"]+)"/g)) used.add(i18n.ui(key));
     for (const [key, question] of Object.entries(questions)) {
         if (question.question) {
             used.add(i18n.questionText(key, question.question));
