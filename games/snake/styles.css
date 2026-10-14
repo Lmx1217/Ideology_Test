@@ -10,7 +10,7 @@ body {
 
 .container {
     text-align: center;
-    position: relative; /* 为绝对定位的子元素提供参考 */
+    position: relative; /* Anchor absolutely positioned child elements */
 }
 
 canvas {
@@ -32,7 +32,7 @@ canvas {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000; /* 确保按钮位于最上层 */
+    z-index: 1000; /* Keep the button on top */
 }
 
 .boundary-toggle, .mobile-toggle {
@@ -87,18 +87,18 @@ canvas {
 
 .mobile-controls {
     position: relative;
-    width: 200px; /* 放大容器的宽度 */
-    height: 200px; /* 放大容器的高度 */
+    width: 200px; /* Increase the container width */
+    height: 200px; /* Increase the container height */
     margin: 20px auto 0;
-    background: transparent; /* 移除背景图片 */
+    background: transparent; /* Remove the background image */
 }
 
 .arrow-key {
     position: absolute;
-    width: 70px; /* 放大按钮的宽度 */
-    height: 70px; /* 放大按钮的高度 */
-    background-color: #808080; /* 灰色背景 */
-    border-radius: 10px; /* 圆角按钮 */
+    width: 70px; /* Increase the button width */
+    height: 70px; /* Increase the button height */
+    background-color: #808080; /* Gray background */
+    border-radius: 10px; /* Rounded buttons */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,18 +109,18 @@ canvas {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('arrowtriangle.up.fill.png'); /* 添加上箭头图标 */
-    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-image: url('arrowtriangle.up.fill.png'); /* Add the up arrow icon */
+    background-size: 40px 40px; /* Set the arrow icon size */
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #leftKey {
     top: 50%;
-    left: -20px; /* 调整左箭头的位置，增加间距 */
+    left: -20px; /* Move the left arrow outward to increase spacing */
     transform: translateY(-50%);
-    background-image: url('arrowtriangle.left.fill.png'); /* 添加左箭头图标 */
-    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-image: url('arrowtriangle.left.fill.png'); /* Add the left arrow icon */
+    background-size: 40px 40px; /* Set the arrow icon size */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -129,18 +129,18 @@ canvas {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('arrowtriangle.down.fill.png'); /* 添加下箭头图标 */
-    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-image: url('arrowtriangle.down.fill.png'); /* Add the down arrow icon */
+    background-size: 40px 40px; /* Set the arrow icon size */
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #rightKey {
     top: 50%;
-    right: -20px; /* 调整右箭头的位置，增加间距 */
+    right: -20px; /* Move the right arrow outward to increase spacing */
     transform: translateY(-50%);
-    background-image: url('arrowtriangle.right.fill.png'); /* 添加右箭头图标 */
-    background-size: 40px 40px; /* 调整箭头图标大小 */
+    background-image: url('arrowtriangle.right.fill.png'); /* Add the right arrow icon */
+    background-size: 40px 40px; /* Set the arrow icon size */
     background-repeat: no-repeat;
     background-position: center;
 }

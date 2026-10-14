@@ -31,31 +31,35 @@ function startTest() {
 
         // 在动画结束后进行跳转
         startButton.addEventListener('animationend', function() {
-            window.location.href = 'test.html';
+            window.location.href = SiteI18n.href('test.html');
         });
     }, 400); // 200毫秒延迟
 }
 
 function showNotes() {
-    window.location.href = 'note.html';
+    window.location.href = SiteI18n.href('note.html');
 }
 
 function history() {
-    window.location.href = 'history.html';
+    window.location.href = SiteI18n.href('history.html');
 }
 
 function giveFeedback() {
-    alert('任何问题或建议，请发送邮件至notavailable');
+    alert(SiteI18n.ui('feedbackMessage'));
 }
 
-function switchToEnglish() {
-    alert('English version is under development. Please check back later.');
+function switchLanguage() {
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', SiteI18n.language === 'en' ? 'zh' : 'en');
+    window.location.assign(url.href);
 }
 
 function showVersion() {
-    alert('版本：alpha-1.6.0a-2024.7.25');
+    alert(SiteI18n.ui('versionLabel') + ' alpha-1.7.0a-2026.10.13');
 }
 
 function games() {
     window.location.href = 'games/snake/snake.html';
 }
+
+SiteI18n.applyPageLanguage();
