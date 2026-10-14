@@ -31,3 +31,6 @@ AGENTS.md
 [Rr][Ee][Aa][Dd][Mm][Ee]
 [Rr][Ee][Aa][Dd][Mm][Ee].*
 /docs/en-US-review-social-democracy.md
+translation-review/data.js
+translation-review/review-core.js
+translation-review/review.test.cjs
