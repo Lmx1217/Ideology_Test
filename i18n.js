@@ -12,7 +12,23 @@
         back: 'social-democracy-01/U2',
         restart: 'social-democracy-01/U3',
         feedbackMessage: 'social-democracy-01/X1',
-        versionLabel: 'social-democracy-01/X2'
+        versionLabel: 'social-democracy-01/X2',
+        notesTitle: 'notes-01/title',
+        notesTestTips: 'notes-01/test-tips',
+        notesNotation: 'notes-01/notation',
+        notesWording: 'notes-01/wording',
+        notesConciseCopy: 'notes-01/concise-copy',
+        notesElimination: 'notes-01/elimination',
+        notesTryBoth: 'notes-01/try-both',
+        notesReviewAnswers: 'notes-01/review-answers',
+        notesSiteTips: 'notes-01/site-tips',
+        notesFeedback: 'notes-01/feedback',
+        notesBrowserBackPrefix: 'notes-01/browser-back-prefix',
+        notesBrowserBackSuffix: 'notes-01/browser-back-suffix',
+        notesBrowserBackAlt: 'notes-01/browser-back-alt',
+        notesTitleActions: 'notes-01/title-actions',
+        notesResultsHeading: 'notes-01/results-heading',
+        notesResultsNote: 'notes-01/results-note'
     };
 
     // Match by question context, never by a global replacement of short answers.
@@ -400,6 +416,9 @@
         document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
         document.querySelectorAll('[data-i18n]').forEach(element => {
             element.textContent = ui(element.dataset.i18n);
+        });
+        document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+            element.setAttribute('alt', ui(element.dataset.i18nAlt));
         });
         try {
             window.localStorage.setItem('homepageLanguage', language);

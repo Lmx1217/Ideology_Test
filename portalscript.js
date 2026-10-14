@@ -37,7 +37,7 @@ function startTest() {
 }
 
 function showNotes() {
-    window.location.href = 'note.html';
+    window.location.href = SiteI18n.href('note.html');
 }
 
 function history() {
