@@ -6,10 +6,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
+    box-sizing: border-box;
+    padding: 24px 0;
 }
 
 .containerall {
+    box-sizing: border-box;
     background: white;
     padding: 20px;
     border-radius: 16px; /* 增加圆角度数 */
@@ -89,22 +93,125 @@ h1 {
     margin: 10px auto; /* 确保按钮居中 */
 }
 
-/* Longer English questions must remain reachable on short and narrow screens. */
-html[lang="en"] body {
-    height: auto;
-    min-height: 100vh;
-    min-height: 100svh;
-    box-sizing: border-box;
-    padding: 24px 0;
-}
-
-html[lang="en"] .containerall {
-    box-sizing: border-box;
-}
-
 html[lang="en"] .restart-button {
     width: fit-content;
     max-width: 95%;
+}
+
+.feedback-button {
+    width: fit-content;
+    max-width: 95%;
+}
+
+#feedback-dialog {
+    box-sizing: border-box;
+    width: min(480px, calc(100vw - 32px));
+    max-height: calc(100vh - 32px);
+    max-height: calc(100svh - 32px);
+    margin: auto;
+    padding: 24px;
+    overflow-y: auto;
+    border: 0;
+    border-radius: 16px;
+    background: white;
+    color: #202124;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+#feedback-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+#feedback-title {
+    margin: 0 0 20px;
+    font-size: 1.4em;
+}
+
+#feedback-form label {
+    display: block;
+    font-weight: bold;
+}
+
+#feedback-hint {
+    margin: 8px 0 12px;
+    color: #60656c;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+#feedback-text {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8a9098;
+    border-radius: 10px;
+    background: white;
+    color: inherit;
+    font: inherit;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+#feedback-text:focus-visible,
+.option-button:focus-visible {
+    outline: 3px solid #007aff;
+    outline-offset: 3px;
+}
+
+#feedback-status {
+    margin: 12px 0;
+    line-height: 1.5;
+    color: #236738;
+}
+
+#feedback-status[data-error="true"] {
+    color: #b42318;
+}
+
+.feedback-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#feedback-dialog .option-button {
+    width: auto;
+    margin: 0;
+    padding: 10px 16px;
+    font-size: 1em;
+}
+
+#feedback-dialog .option-button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#feedback-submit[hidden] {
+    display: none;
+}
+
+[data-theme="dark"] #feedback-dialog {
+    background: #1e1e1e;
+    color: #f4f4f4;
+}
+
+[data-theme="dark"] #feedback-text {
+    background: #141414;
+    border-color: #777;
+}
+
+[data-theme="dark"] #feedback-hint {
+    color: #bdc1c6;
+}
+
+[data-theme="dark"] #feedback-status {
+    color: #8edda4;
+}
+
+[data-theme="dark"] #feedback-status[data-error="true"] {
+    color: #ffaca5;
 }
 
 @media (max-width: 600px) {

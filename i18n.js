@@ -447,6 +447,30 @@
 
     const language = resolveLanguage();
 
+    const feedbackCopy = {
+        resultFeedback: { zh: '结果不准确？', en: 'My result seems inaccurate' },
+        feedbackLabel: { zh: '你觉得哪里不准确？', en: 'What seems inaccurate?' },
+        feedbackHint: {
+            zh: '可以描述不符合你的观点的地方，或你认为更合适的结果（最多 5000 字）。',
+            en: 'Tell me what does not reflect your views, or which result would fit better (up to 5,000 characters).'
+        },
+        feedbackCancel: { zh: '取消', en: 'Cancel' },
+        feedbackClose: { zh: '关闭', en: 'Close' },
+        feedbackSubmit: { zh: '提交反馈', en: 'Submit feedback' },
+        feedbackSubmitting: { zh: '正在提交……', en: 'Submitting…' },
+        feedbackEmpty: { zh: '请先填写反馈内容。', en: 'Please enter your feedback first.' },
+        feedbackTooLong: { zh: '反馈内容不能超过 5000 字。', en: 'Please keep your feedback within 5,000 characters.' },
+        feedbackSuccess: { zh: '反馈已保存，谢谢你的反馈！', en: 'Your feedback has been saved. Thank you!' },
+        feedbackError: {
+            zh: '反馈未能保存，请重试。你输入的内容已保留。',
+            en: 'Your feedback could not be saved. Please try again. Your text has been kept.'
+        },
+        feedbackUnavailable: {
+            zh: '当前页面未连接反馈服务，请通过本地反馈服务打开网站后再提交。你输入的内容已保留。',
+            en: 'This page is not connected to the feedback service. Open the site through the local feedback server to submit. Your text has been kept.'
+        }
+    };
+
     function text(id, original) {
         const entry = copy[id];
         // Leave unreviewed or subsequently changed Chinese copy intact.
@@ -462,6 +486,7 @@
     }
 
     function ui(key) {
+        if (feedbackCopy[key]) return feedbackCopy[key][language];
         const id = uiIds[key];
         return text(id, copy[id].zh);
     }

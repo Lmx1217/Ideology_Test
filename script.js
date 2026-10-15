@@ -69,6 +69,13 @@ function selectOption(option) {
             restartButton.onclick = () => restartQuiz();
             optionsContainer.appendChild(restartButton);
 
+            const feedbackButton = document.createElement('button');
+            feedbackButton.id = 'result-feedback-button';
+            feedbackButton.className = 'option-button feedback-button';
+            feedbackButton.innerText = SiteI18n.ui('resultFeedback');
+            feedbackButton.onclick = () => ResultFeedback.open();
+            optionsContainer.appendChild(feedbackButton);
+
             const backButton = document.getElementById('back-button');
             backButton.style.display = 'block';
         }
@@ -76,6 +83,7 @@ function selectOption(option) {
 }
 
 function loadQuestion(questionKey) {
+    ResultFeedback.reset();
     const questionData = questions[questionKey];
     document.getElementById('question').innerText = SiteI18n.questionText(questionKey, questionData.question);
 
