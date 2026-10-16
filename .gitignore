@@ -30,6 +30,8 @@ __pycache__/
 AGENTS.md
 [Rr][Ee][Aa][Dd][Mm][Ee]
 [Rr][Ee][Aa][Dd][Mm][Ee].*
+# Publish the repository's main project documentation.
+!/README.md
 /docs/en-US-review-social-democracy.md
 translation-review/data.js
 translation-review/review-core.js
