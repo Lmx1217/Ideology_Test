@@ -991,423 +991,423 @@ const questions = {
         }
     },
     Integralism: {
-        result: "你的意识形态是：整合主义",
+        result: "结果：整合主义",
         image: "Integralism_img.png"
     },
     Corporatism: {
-        result: "你的意识形态是：法团主义",
+        result: "结果：法团主义",
         image: "Corporatism_img.png"
     },
     Mercantilism: {
-        result: "你的意识形态是：重商主义",
+        result: "结果：重商主义",
         image: "Mercantilism_img.png"
     },
     Bismarckism: {
-        result: "你的意识形态是：俾斯麦主义",
+        result: "结果：俾斯麦主义",
         image: "Bismarckism_img.jpeg"
     },
     Homoconservatism: {
-        result: "你的意识形态是：LGBT保守主义",
+        result: "结果：LGBT保守主义",
         image: "Homoconservatism_img.png"
     },
     Reactionary: {
-        result: "你的意识形态是：反动主义",
+        result: "结果：反动主义",
         image: "Reactionary_img.png"
     },
     Fascism: {
-        result: "你的意识形态是：法西斯主义",
+        result: "结果：法西斯主义",
         image: "Fascism_img.png"
     },
     NationalSocialism: {
-        result: "你的意识形态是：纳粹主义",
+        result: "结果：纳粹主义",
         image: "NationalSocialism_img.png"
     },
     Monarchism: {
-        result: "你的意识形态是：君主制",
+        result: "结果：君主制",
         image: "Monarchism_img.png"
     },
     Imperialism: {
-        result: "你的意识形态是：帝国主义",
+        result: "结果：帝国主义",
         image: "Imperialism_img.png"
     },
     IngSoc: {
-        result: "你的意识形态是：英社主义",
+        result: "结果：英社主义",
         image: "IngSoc_img.png"
     },
     Kraterocracy: {
-        result: "你的意识形态是：Kraterocracy (独裁主义?)",
+        result: "结果：Kraterocracy (独裁主义?)",
         image: "Kraterocracy_img.png"
     },
     AuthoritarianCapitalism: {
-        result: "你的意识形态是：威权资本主义",
+        result: "结果：威权资本主义",
         image: "AuthoritarianCapitalism_img.png"
     },
     Pinochetism: {
-        result: "你的意识形态是：皮诺切特主义",
+        result: "结果：皮诺切特主义",
         image: "Pinochetism_img.png"
     },
     Trumpism: {
-        result: "你的意识形态是：特朗普主义",
+        result: "结果：特朗普主义",
         image: "Trumpism_img.png"
     },
     Conservatism: {
-        result: "你的意识形态是：保守主义",
+        result: "结果：保守主义",
         image: "Conservatism_img.png"
     },
     SocialDarwinism: {
-        result: "你的意识形态是：社会达尔文主义",
+        result: "结果：社会达尔文主义",
         image: "SocialDarwinism_img.png"
     },
     WhiteNationalism: {
-        result: "你的意识形态是：白人至上主义",
+        result: "结果：白人至上主义",
         image: "WhiteNationalism_img.png"
     },
     NationalCapitalism: {
-        result: "你的意识形态是：民族资本主义",
+        result: "结果：民族资本主义",
         image: "NationalCapitalism_img.png"
     },
     ConstitutionalMonarchism: {
-        result: "你的意识形态是：君主立宪制",
+        result: "结果：君主立宪制",
         image: "ConstitutionalMonarchism_img.png"
     },
     ChristianDemocracy: {
-        result: "你的意识形态是：基督教民主主义",
+        result: "结果：基督教民主主义",
         image: "ChristianDemocracy_img.png"
     },
     Liberalism: {
-        result: "你的意识形态是：自由主义",
+        result: "结果：自由主义",
         image: "Liberalism_img.png"
     },
     OrdoLiberalism: {
-        result: "你的意识形态是：秩序自由主义",
+        result: "结果：秩序自由主义",
         image: "OrdoLiberalism_img.png"
     },
     LiberalConservatism: {
-        result: "你的意识形态是：自由保守主义",
+        result: "结果：自由保守主义",
         image: "LiberalConservatism_img.png"
     },
     StateLiberalism: {
-        result: "你的意识形态是：国家自由主义",
+        result: "结果：国家自由主义",
         image: "StateLiberalism_img.png"
     },
     EconomicLiberalism: {
-        result: "你的意识形态是：经济自由主义",
+        result: "结果：经济自由主义",
         image: "EconomicLiberalism_img.png"
     },
     Neoconservatism: {
-        result: "你的意识形态是：新保守主义",
+        result: "结果：新保守主义",
         image: "Neoconservatism_img.png"
     },
     Reaganism: {
-        result: "你的意识形态是：里根主义",
+        result: "结果：里根主义",
         image: "Reaganism_img.png"
     },
     ThirdWay: {
-        result: "你的意识形态是：第三条道路",
+        result: "结果：第三条道路",
         image: "ThirdWay_img.png"
     },
     Distributism: {
-        result: "你的意识形态是：分产主义",
+        result: "结果：分产主义",
         image: "Distributism_img.png"
     },
     Titoism: {
-        result: "你的意识形态是：铁托主义",
+        result: "结果：铁托主义",
         image: "Titoism_img.png"
     },
     Longism: {
-        result: "你的意识形态是：休伊•朗主义",
+        result: "结果：休伊•朗主义",
         image: "Longism_img.png"
     },
     EnlightenedAbsolutism: {
-        result: "你的意识形态是：开明君主制",
+        result: "结果：开明君主制",
         image: "EnlightenedAbsolutism_img.png"
     },
     SocialistTranshumanism: {
-        result: "你的意识形态是：社会主义超人类主义",
+        result: "结果：社会主义超人类主义",
         image: "SocialistTranshumanism_img.png"
     },
     Strasserism: {
-        result: "你的意识形态是：斯特拉瑟主义",
+        result: "结果：斯特拉瑟主义",
         image: "Strasserism_img.png"
     },
     Collectivism: {
-        result: "你的意识形态是：集体主义",
+        result: "结果：集体主义",
         image: "Collectivism_img.png"
     },
     LeftWingPopulism: {
-        result: "你的意识形态是：左翼民粹主义",
+        result: "结果：左翼民粹主义",
         image: "LeftWingPopulism_img.png"
     },
     Trotskyism: {
-        result: "你的意识形态是：托洛茨基主义",
+        result: "结果：托洛茨基主义",
         image: "Trotskyism_img.png"
     },
     Baathism: {
-        result: "你的意识形态是：复兴主义",
+        result: "结果：复兴主义",
         image: "Baathism_img.png"
     },
     HiveMindCollectivism: {
-        result: "你的意识形态是：蜂群思维集体主义",
+        result: "结果：蜂群思维集体主义",
         image: "HiveMindCollectivism_img.png"
     },
     Marxism: {
-        result: "你的意识形态是：正统马克思主义",
+        result: "结果：正统马克思主义",
         image: "Marxism_img.png"
     },
     LeftCommunism: {
-        result: "你的意识形态是：左翼共产主义",
+        result: "结果：左翼共产主义",
         image: "LeftCommunism_img.png"
     },
     Eurocommunism: {
-        result: "你的意识形态是：欧洲共产主义",
+        result: "结果：欧洲共产主义",
         image: "Eurocommunism_img.png"
     },
     NationalSyndicalism: {
-        result: "你的意识形态是：民族工团主义",
+        result: "结果：民族工团主义",
         image: "NationalSyndicalism_img.png"
     },
     NationalBolshevism: {
-        result: "你的意识形态是：民族布尔什维克主义",
+        result: "结果：民族布尔什维克主义",
         image: "NationalBolshevism_img.png"
     },
     Bolsheviknationalism: {
-        result: "你的意识形态是：布尔什维克民族主义",
+        result: "结果：布尔什维克民族主义",
         image: "Bolsheviknationalism_img.png"
     },
     Stalinism: {
-        result: "你的意识形态是：斯大林主义",
+        result: "结果：斯大林主义",
         image: "Stalinism_img.png"
     },
     Maoism: {
-        result: "你的意识形态是：毛泽东思想",
+        result: "结果：毛泽东思想",
         image: "Maoism_img.png"
     },
     Castroism: {
-        result: "你的意识形态是：卡斯特罗主义",
+        result: "结果：卡斯特罗主义",
         image: "Castroism_img.png"
     },
     MonarchoSocialism: {
-        result: "你的意识形态是：君主制社会主义",
+        result: "结果：君主制社会主义",
         image: "MonarchoSocialism_img.png"
     },
     Mugabeism: {
-        result: "你的意识形态是：穆加贝主义",
+        result: "结果：穆加贝主义",
         image: "Mugabeism_img.png"
     },
     LeftWingNationalism: {
-        result: "你的意识形态是：左翼民族主义",
+        result: "结果：左翼民族主义",
         image: "LeftWingNationalism_img.png"
     },
     Jacobinism: {
-        result: "你的意识形态是：雅各宾派",
+        result: "结果：雅各宾派",
         image: "Jacobinism_img.png"
     },
     SyndicalistMutualism: {
-        result: "你的意识形态是：工团互助主义",
+        result: "结果：工团互助主义",
         image: "SyndicalistMutualism_img.png"
     },
     Mutualism: {
-        result: "你的意识形态是：互助主义",
+        result: "结果：互助主义",
         image: "Mutualism_img.png"
     },
     AnarchoPrimitivism: {
-        result: "你的意识形态是：无政府原始主义",
+        result: "结果：无政府原始主义",
         image: "AnarchoPrimitivism_img.png"
     },
     Egoism: {
-        result: "你的意识形态是：自我主义",
+        result: "结果：自我主义",
         image: "Egoism_img.png"
     },
     AnarchoSyndicalism: {
-        result: "你的意识形态是：无政府工团主义",
+        result: "结果：无政府工团主义",
         image: "AnarchoSyndicalism_img.png"
     },
     SocialAnarchism: {
-        result: "你的意识形态是：社会无政府主义",
+        result: "结果：社会无政府主义",
         image: "SocialAnarchism_img.png"
     },
     AnarchoCommunism: {
-        result: "你的意识形态是：无政府共产主义",
+        result: "结果：无政府共产主义",
         image: "AnarchoCommunism_img.jpeg"
     },
     DemocraticConfederalism: {
-        result: "你的意识形态是：民主邦联主义",
+        result: "结果：民主邦联主义",
         image: "DemocraticConfederalism_img.png"
     },
     LibertarianMunicipalism: {
-        result: "你的意识形态是：Libertarian Municipalism (自由意志市政主义?)",
+        result: "结果：Libertarian Municipalism (自由意志市政主义?)",
         image: "LibertarianMunicipalism_img.png"
     },
     Soulism: {
-        result: "你的意识形态是：灵魂主义",
+        result: "结果：灵魂主义",
         image: "Soulism_img.png"
     },
     AnarchoPacifism: {
-        result: "你的意识形态是：无政府和平主义",
+        result: "结果：无政府和平主义",
         image: "AnarchoPacifism_img.png"
     },
     Communalism: {
-        result: "你的意识形态是：公社主义",
+        result: "结果：公社主义",
         image: "Communalism_img.png"
     },
     GreenLiberalism: {
-        result: "你的意识形态是：绿色自由主义",
+        result: "结果：绿色自由主义",
         image: "GreenLiberalism_img.png"
     },
     Georgism: {
-        result: "你的意识形态是：乔治主义",
+        result: "结果：乔治主义",
         image: "Georgism_img.png"
     },
     Progressivism: {
-        result: "你的意识形态是：进步主义",
+        result: "结果：进步主义",
         image: "Progressivism_img.png"
     },
     SocialDemocracy: {
-        result: "你的意识形态是：社会民主主义",
+        result: "结果：社会民主主义",
         image: "SocialDemocracy_img.png"
     },
     NordicModel: {
-        result: "你的意识形态是：北欧模式",
+        result: "结果：北欧模式",
         image: "NordicModel_img.png"
     },
     DemocraticSocialism: {
-        result: "你的意识形态是：民主社会主义",
+        result: "结果：民主社会主义",
         image: "DemocraticSocialism_img.png"
     },
     LiberalSocialism: {
-        result: "你的意识形态是：自由社会主义",
+        result: "结果：自由社会主义",
         image: "LiberalSocialism_img.png"
     },
     UtopianSocialism: {
-        result: "你的意识形态是：空想社会主义",
+        result: "结果：空想社会主义",
         image: "UtopianSocialism_img.png"
     },
     MonarchoSyndicalism: {
-        result: "你的意识形态是：君主制工团主义",
+        result: "结果：君主制工团主义",
         image: "MonarchoSyndicalism_img.png"
     },
     Syndicalism: {
-        result: "你的意识形态是：工团主义",
+        result: "结果：工团主义",
         image: "Syndicalism_img.png"
     },
     LibertarianSocialism: {
-        result: "你的意识形态是：自由意志社会主义",
+        result: "结果：自由意志社会主义",
         image: "LibertarianSocialism_img.png"
     },
     MinarchoSocialism: {
-        result: "你的意识形态是：小政府社会主义",
+        result: "结果：小政府社会主义",
         image: "MinarchoSocialism_img.png"
     },
     ChristianSocialism: {
-        result: "你的意识形态是：基督教社会主义",
+        result: "结果：基督教社会主义",
         image: "ChristianSocialism_img.png"
     },
     MarketSocialism: {
-        result: "你的意识形态是：市场社会主义",
+        result: "结果：市场社会主义",
         image: "MarketSocialism_img.png"
     },
     CouncilCommunism: {
-        result: "你的意识形态是：委员会共产主义",
+        result: "结果：委员会共产主义",
         image: "CouncilCommunism_img.png"
     },
     AnarchoLiberalism: {
-        result: "你的意识形态是：无政府自由主义",
+        result: "结果：无政府自由主义",
         image: "AnarchoLiberalism_img.png"
     },
     Avaritionism: {
-        result: "你的意识形态是：自我达尔文主义",
+        result: "结果：自我达尔文主义",
         image: "Avaritionism_img.png"
     },
     AnarchoNihilism: {
-        result: "你的意识形态是：无政府虚无主义",
+        result: "结果：无政府虚无主义",
         image: "AnarchoNihilism_img.png"
     },
     AnarchoCapitalism: {
-        result: "你的意识形态是：无政府资本主义",
+        result: "结果：无政府资本主义",
         image: "AnarchoCapitalism_img.png"
     },
     PinkCapitalism: {
-        result: "你的意识形态是：粉色资本主义",
+        result: "结果：粉色资本主义",
         image: "PinkCapitalism_img.png"
     },
     Korwinism: {
-        result: "你的意识形态是：科尔温主义",
+        result: "结果：科尔温主义",
         image: "Korwinism_img.png"
     },
     NeoliberalConservatism: {
-        result: "你的意识形态是：新自由保守主义",
+        result: "结果：新自由保守主义",
         image: "NeoliberalConservatism_img.png"
     },
     NationalLiberalism: {
-        result: "你的意识形态是：民族自由主义",
+        result: "结果：民族自由主义",
         image: "NationalLiberalism_img.png"
     },
     Voluntaryism: {
-        result: "你的意识形态是：自愿主义",
+        result: "结果：自愿主义",
         image: "Voluntaryism_img.png"
     },
     Hayekism: {
-        result: "你的意识形态是：哈耶克主义",
+        result: "结果：哈耶克主义",
         image: "Hayekism_img.png"
     },
     Objectivism: {
-        result: "你的意识形态是：客观主义",
+        result: "结果：客观主义",
         image: "Objectivism_img.png"
     },
     Minarchism: {
-        result: "你的意识形态是：小政府主义",
+        result: "结果：小政府主义",
         image: "Minarchism_img.png"
     },
     Neoliberalism: {
-        result: "你的意识形态是：新自由主义",
+        result: "结果：新自由主义",
         image: "Neoliberalism_img.png"
     },
     ClassicalLiberalism: {
-        result: "你的意识形态是：古典自由主义",
+        result: "结果：古典自由主义",
         image: "ClassicalLiberalism_img.png"
     },
     Paleolibertarianism: {
-        result: "你的意识形态是：旧自由意志主义",
+        result: "结果：旧自由意志主义",
         image: "Paleolibertarianism_img.png"
     },
     LibertarianConservatism: {
-        result: "你的意识形态是：自由意志保守主义",
+        result: "结果：自由意志保守主义",
         image: "LibertarianConservatism_img.png"
     },
     LibertarianTranshumanism: {
-        result: "你的意识形态是：自由意志超人类主义",
+        result: "结果：自由意志超人类主义",
         image: "LibertarianTranshumanism_img.png"
     },
     Geolibertarianism: {
-        result: "你的意识形态是：乔治自由意志主义",
+        result: "结果：乔治自由意志主义",
         image: "Geolibertarianism_img.png"
     },
     DistributistLibertarianism: {
-        result: "你的意识形态是：分产自由意志主义",
+        result: "结果：分产自由意志主义",
         image: "DistributistLibertarianism_img.png"
     },
     SocialLibertarianism: {
-        result: "你的意识形态是：社会自由意志主义",
+        result: "结果：社会自由意志主义",
         image: "SocialLibertarianism_img.png"
     },
     Hoppeanism: {
-        result: "你的意识形态是：霍普主义",
+        result: "结果：霍普主义",
         image: "Hoppeanism_img.png"
     },
     Libertarianism: {
-        result: "你的意识形态是：自由意志主义",
+        result: "结果：自由意志主义",
         image: "Libertarianism_img.png"
     },
     LiberalLibertarianism: {
-        result: "你的意识形态是：Liberal Libertarianism (自由主义自由意志主义?)",
+        result: "结果：Liberal Libertarianism (自由主义自由意志主义?)",
         image: ""
     },
     StateCapitalism: {
-        result: "你的意识形态是：国家资本主义",
+        result: "结果：国家资本主义",
         image: "StateCapitalism_img.png"
     },
     SocialismwithChinesecharacteristics: {
-        result: "你的意识形态是：中国特色社会主义",
+        result: "结果：中国特色社会主义",
         image: "SocialismwithChinesecharacteristics_img.png"
     }
 };

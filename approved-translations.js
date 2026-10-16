@@ -135,8 +135,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Protect workers’ rights while giving employers enough flexibility to manage their workforce"
     },
     "social-democracy-01/R1": {
-        "zh": "你的意识形态是：社会民主主义",
-        "en": "Your result: Social Democracy"
+        "zh": "结果：社会民主主义",
+        "en": "Result: Social Democracy"
     },
     "social-democracy-01/X1": {
         "zh": "任何问题或建议，请发送邮件至notavailable",
@@ -195,16 +195,16 @@ window.APPROVED_TRANSLATIONS = {
         "en": "National unity and strength"
     },
     "fascism-01/R1": {
-        "zh": "你的意识形态是：法西斯主义",
-        "en": "Your result: Fascism"
+        "zh": "结果：法西斯主义",
+        "en": "Result: Fascism"
     },
     "fascism-01/X3": {
         "zh": "原项目无中文；当前英文为 Result Image",
         "en": "Result Image"
     },
     "nazism-01/R1": {
-        "zh": "你的意识形态是：纳粹主义",
-        "en": "Your result: Nazism"
+        "zh": "结果：纳粹主义",
+        "en": "Result: Nazism"
     },
     "monarchism-01/Q6": {
         "zh": "我们是否需要一个君主来统治国家？",
@@ -219,8 +219,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "No / No preference"
     },
     "monarchism-01/R1": {
-        "zh": "你的意识形态是：君主制",
-        "en": "Your result: Monarchism"
+        "zh": "结果：君主制",
+        "en": "Result: Monarchism"
     },
     "socialism-with-chinese-characteristics-01/Q7": {
         "zh": "你对待外国的策略是什么？",
@@ -235,12 +235,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Expand the country’s influence abroad and control or exploit other countries’ resources"
     },
     "socialism-with-chinese-characteristics-01/R1": {
-        "zh": "你的意识形态是：中国特色社会主义",
-        "en": "Your result: Socialism with Chinese Characteristics"
+        "zh": "结果：中国特色社会主义",
+        "en": "Result: Socialism with Chinese Characteristics"
     },
     "imperialism-01/R1": {
-        "zh": "你的意识形态是：帝国主义",
-        "en": "Your result: Imperialism"
+        "zh": "结果：帝国主义",
+        "en": "Result: Imperialism"
     },
     "monarchism-01/Q5": {
         "zh": "在你看来国家应该？",
@@ -259,28 +259,28 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Do we need to worship our leader as a god?"
     },
     "kraterocracy-01/R1": {
-        "zh": "你的意识形态是：Kraterocracy (独裁主义?)",
-        "en": "Your result: Kraterocracy"
+        "zh": "结果：Kraterocracy (独裁主义?)",
+        "en": "Result: Kraterocracy"
     },
     "ingsoc-01/R1": {
-        "zh": "你的意识形态是：英社主义",
-        "en": "Your result: Ingsoc"
+        "zh": "结果：英社主义",
+        "en": "Result: Ingsoc"
     },
     "integralism-01/Q4.2": {
         "zh": "否",
         "en": "No"
     },
     "integralism-01/R1": {
-        "zh": "你的意识形态是：整合主义",
-        "en": "Your result: Integralism"
+        "zh": "结果：整合主义",
+        "en": "Result: Integralism"
     },
     "integralism-01/Q4": {
         "zh": "我们是否应该建立一个以过去的天主教为基础的社会？",
         "en": "Should we build a society based on traditional Catholicism?"
     },
     "corporatism-01/R1": {
-        "zh": "你的意识形态是：法团主义",
-        "en": "Your result: Corporatism"
+        "zh": "结果：法团主义",
+        "en": "Result: Corporatism"
     },
     "globalization-support-01/Q1": {
         "zh": "对全球化的态度？",
@@ -311,8 +311,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "No monarch"
     },
     "globalization-support-01/R1": {
-        "zh": "你的意识形态是：君主立宪制",
-        "en": "Your result: Constitutional Monarchism"
+        "zh": "结果：君主立宪制",
+        "en": "Result: Constitutional Monarchism"
     },
     "globalization-support-01/Q3": {
         "zh": "环境和经济哪个更重要？",
@@ -331,8 +331,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Should the country be based on Christian values?"
     },
     "globalization-support-01/R2": {
-        "zh": "你的意识形态是：基督教民主主义",
-        "en": "Your result: Christian Democracy"
+        "zh": "结果：基督教民主主义",
+        "en": "Result: Christian Democracy"
     },
     "globalization-support-01/Q5": {
         "zh": "对于自由市场我们应该？",
@@ -347,12 +347,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Actively protect it"
     },
     "globalization-support-01/R3": {
-        "zh": "你的意识形态是：自由主义",
-        "en": "Your result: Liberalism"
+        "zh": "结果：自由主义",
+        "en": "Result: Liberalism"
     },
     "globalization-support-01/R4": {
-        "zh": "你的意识形态是：秩序自由主义",
-        "en": "Your result: Ordoliberalism"
+        "zh": "结果：秩序自由主义",
+        "en": "Result: Ordoliberalism"
     },
     "globalization-support-01/Q6": {
         "zh": "政府对经济应该？",
@@ -391,28 +391,28 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Diplomacy or indirect military action"
     },
     "globalization-support-01/R5": {
-        "zh": "你的意识形态是：新保守主义",
-        "en": "Your result: Neoconservatism"
+        "zh": "结果：新保守主义",
+        "en": "Result: Neoconservatism"
     },
     "globalization-support-01/R6": {
-        "zh": "你的意识形态是：里根主义",
-        "en": "Your result: Reaganism"
+        "zh": "结果：里根主义",
+        "en": "Result: Reaganism"
     },
     "globalization-support-01/R7": {
-        "zh": "你的意识形态是：自由保守主义",
-        "en": "Your result: Liberal Conservatism"
+        "zh": "结果：自由保守主义",
+        "en": "Result: Liberal Conservatism"
     },
     "globalization-support-01/Q9": {
         "zh": "我们是否需要一个世界帝国去传播自由主义？",
         "en": "Do we need a global empire to spread liberalism?"
     },
     "globalization-support-01/R8": {
-        "zh": "你的意识形态是：国家自由主义",
-        "en": "Your result: State Liberalism"
+        "zh": "结果：国家自由主义",
+        "en": "Result: State Liberalism"
     },
     "globalization-support-01/R9": {
-        "zh": "你的意识形态是：经济自由主义",
-        "en": "Your result: Economic Liberalism"
+        "zh": "结果：经济自由主义",
+        "en": "Result: Economic Liberalism"
     },
     "land-individual-indifferent-01/Q1": {
         "zh": "这个世界上的民族/种族？",
@@ -451,16 +451,16 @@ window.APPROVED_TRANSLATIONS = {
         "en": "It doesn’t have to be a white nation"
     },
     "land-individual-indifferent-01/R4": {
-        "zh": "你的意识形态是：白人至上主义",
-        "en": "Your result: White Nationalism"
+        "zh": "结果：白人至上主义",
+        "en": "Result: White Nationalism"
     },
     "land-individual-indifferent-01/R5": {
-        "zh": "你的意识形态是：民族资本主义",
-        "en": "Your result: National Capitalism"
+        "zh": "结果：民族资本主义",
+        "en": "Result: National Capitalism"
     },
     "land-individual-indifferent-01/R3": {
-        "zh": "你的意识形态是：社会达尔文主义",
-        "en": "Your result: Social Darwinism"
+        "zh": "结果：社会达尔文主义",
+        "en": "Result: Social Darwinism"
     },
     "land-individual-indifferent-01/Q4": {
         "zh": "你对于现状的看法",
@@ -475,24 +475,24 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Take active steps to preserve it"
     },
     "land-individual-indifferent-01/R1": {
-        "zh": "你的意识形态是：保守主义",
-        "en": "Your result: Conservatism"
+        "zh": "结果：保守主义",
+        "en": "Result: Conservatism"
     },
     "land-individual-indifferent-01/R2": {
-        "zh": "你的意识形态是：特朗普主义",
-        "en": "Your result: Trumpism"
+        "zh": "结果：特朗普主义",
+        "en": "Result: Trumpism"
     },
     "land-individual-indifferent-01/Q5.2": {
         "zh": "把他们全部逮捕、处决",
         "en": "Arrest and execute them all"
     },
     "land-individual-indifferent-01/R6": {
-        "zh": "你的意识形态是：威权资本主义",
-        "en": "Your result: Authoritarian Capitalism"
+        "zh": "结果：威权资本主义",
+        "en": "Result: Authoritarian Capitalism"
     },
     "land-individual-indifferent-01/R7": {
-        "zh": "你的意识形态是：皮诺切特主义",
-        "en": "Your result: Pinochetism"
+        "zh": "结果：皮诺切特主义",
+        "en": "Result: Pinochetism"
     },
     "land-individual-indifferent-01/Q6": {
         "zh": "除了特别有必要的情况以外，我们应该对现状进行改变吗？",
@@ -503,24 +503,24 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Should the country export more and import less to bring in wealth from the rest of the world?"
     },
     "land-individual-indifferent-01/R8": {
-        "zh": "你的意识形态是：重商主义",
-        "en": "Your result: Mercantilism"
+        "zh": "结果：重商主义",
+        "en": "Result: Mercantilism"
     },
     "land-individual-indifferent-01/R9": {
-        "zh": "你的意识形态是：俾斯麦主义",
-        "en": "Your result: Bismarckism"
+        "zh": "结果：俾斯麦主义",
+        "en": "Result: Bismarckism"
     },
     "land-individual-indifferent-01/Q8": {
         "zh": "你对同性恋的看法",
         "en": "What’s your view on homosexuality?"
     },
     "land-individual-indifferent-01/R10": {
-        "zh": "你的意识形态是：LGBT保守主义",
-        "en": "Your result: LGBT Conservatism"
+        "zh": "结果：LGBT保守主义",
+        "en": "Result: LGBT Conservatism"
     },
     "land-individual-indifferent-01/R11": {
-        "zh": "你的意识形态是：反动主义",
-        "en": "Your result: Reactionary Politics"
+        "zh": "结果：反动主义",
+        "en": "Result: Reactionary Politics"
     },
     "economic-market-mixed-indifferent-01/Q1": {
         "zh": "国家内应该实行哪种经济模式？",
@@ -555,12 +555,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Distribute wealth more evenly by breaking up large companies into smaller ones"
     },
     "economic-market-mixed-indifferent-01/R1": {
-        "zh": "你的意识形态是：第三条道路",
-        "en": "Your result: Third Way"
+        "zh": "结果：第三条道路",
+        "en": "Result: Third Way"
     },
     "economic-market-mixed-indifferent-01/R2": {
-        "zh": "你的意识形态是：分产主义",
-        "en": "Your result: Distributism"
+        "zh": "结果：分产主义",
+        "en": "Result: Distributism"
     },
     "economic-market-mixed-indifferent-01/Q3": {
         "zh": "我们应该如何协调同时使用市场经济和计划经济所造成的冲突？",
@@ -575,20 +575,20 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Have the government intervene in key sectors and take direct control"
     },
     "economic-market-mixed-indifferent-01/R3": {
-        "zh": "你的意识形态是：铁托主义",
-        "en": "Your result: Titoism"
+        "zh": "结果：铁托主义",
+        "en": "Result: Titoism"
     },
     "economic-market-mixed-indifferent-01/Q4": {
         "zh": "政府是否因该实施广泛的社会福利？",
         "en": "Should the government provide a broad range of social welfare programs?"
     },
     "economic-market-mixed-indifferent-01/R4": {
-        "zh": "你的意识形态是：休伊•朗主义",
-        "en": "Your result: Longism"
+        "zh": "结果：休伊•朗主义",
+        "en": "Result: Longism"
     },
     "economic-market-mixed-indifferent-01/R5": {
-        "zh": "你的意识形态是：国家资本主义",
-        "en": "Your result: State Capitalism"
+        "zh": "结果：国家资本主义",
+        "en": "Result: State Capitalism"
     },
     "economic-market-mixed-indifferent-01/Q5": {
         "zh": "对待新技术我们应该？",
@@ -603,12 +603,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Use technology to enhance human beings as much as possible"
     },
     "economic-market-mixed-indifferent-01/R6": {
-        "zh": "你的意识形态是：开明君主制",
-        "en": "Your result: Enlightened Monarchism"
+        "zh": "结果：开明君主制",
+        "en": "Result: Enlightened Monarchism"
     },
     "economic-market-mixed-indifferent-01/R7": {
-        "zh": "你的意识形态是：社会主义超人类主义",
-        "en": "Your result: Socialist Transhumanism"
+        "zh": "结果：社会主义超人类主义",
+        "en": "Result: Socialist Transhumanism"
     },
     "economic-planned-01/Q1": {
         "zh": "我们应该在哪些地方实现上述思想？",
@@ -671,16 +671,16 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Keep the economy under state control while emphasizing agricultural collectivization"
     },
     "economic-planned-01/R13": {
-        "zh": "你的意识形态是：斯大林主义",
-        "en": "Your result: Stalinism"
+        "zh": "结果：斯大林主义",
+        "en": "Result: Stalinism"
     },
     "economic-planned-01/R14": {
-        "zh": "你的意识形态是：毛泽东思想",
-        "en": "Your result: Maoism"
+        "zh": "结果：毛泽东思想",
+        "en": "Result: Maoism"
     },
     "economic-planned-01/R15": {
-        "zh": "你的意识形态是：卡斯特罗主义",
-        "en": "Your result: Castroism"
+        "zh": "结果：卡斯特罗主义",
+        "en": "Result: Castroism"
     },
     "economic-planned-01/Q7": {
         "zh": "对于帝国主义，你的看法是？",
@@ -695,12 +695,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "I strongly oppose it. Imperialism is the root cause of poverty and instability"
     },
     "economic-planned-01/R16": {
-        "zh": "你的意识形态是：君主制社会主义",
-        "en": "Your result: Monarcho-Socialism"
+        "zh": "结果：君主制社会主义",
+        "en": "Result: Monarcho-Socialism"
     },
     "economic-planned-01/R17": {
-        "zh": "你的意识形态是：穆加贝主义",
-        "en": "Your result: Mugabeism"
+        "zh": "结果：穆加贝主义",
+        "en": "Result: Mugabeism"
     },
     "economic-planned-01/Q8": {
         "zh": "对于反对革命的人我们应该？",
@@ -715,12 +715,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Execute them"
     },
     "economic-planned-01/R18": {
-        "zh": "你的意识形态是：左翼民族主义",
-        "en": "Your result: Left-Wing Nationalism"
+        "zh": "结果：左翼民族主义",
+        "en": "Result: Left-Wing Nationalism"
     },
     "economic-planned-01/R19": {
-        "zh": "你的意识形态是：雅各宾派",
-        "en": "Your result: Jacobinism"
+        "zh": "结果：雅各宾派",
+        "en": "Result: Jacobinism"
     },
     "economic-planned-01/Q3": {
         "zh": "国家内的经济需要工团来领导吗？",
@@ -735,8 +735,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Direct state control would be better"
     },
     "economic-planned-01/R10": {
-        "zh": "你的意识形态是：民族工团主义",
-        "en": "Your result: National Syndicalism"
+        "zh": "结果：民族工团主义",
+        "en": "Result: National Syndicalism"
     },
     "economic-planned-01/Q4": {
         "zh": "减小贫富差距和排斥一些其他民族哪个优先级更高？",
@@ -751,12 +751,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Excluding other ethnic groups"
     },
     "economic-planned-01/R11": {
-        "zh": "你的意识形态是：民族布尔什维克主义",
-        "en": "Your result: National Bolshevism"
+        "zh": "结果：民族布尔什维克主义",
+        "en": "Result: National Bolshevism"
     },
     "economic-planned-01/R12": {
-        "zh": "你的意识形态是：布尔什维克民族主义",
-        "en": "Your result: Bolshevik Nationalism"
+        "zh": "结果：布尔什维克民族主义",
+        "en": "Result: Bolshevik Nationalism"
     },
     "economic-planned-01/Q9": {
         "zh": "你对新技术的态度",
@@ -775,8 +775,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Try technologies even if they seem to have potential downsides right now"
     },
     "economic-planned-01/R2": {
-        "zh": "你的意识形态是：集体主义",
-        "en": "Your result: Collectivism"
+        "zh": "结果：集体主义",
+        "en": "Result: Collectivism"
     },
     "economic-planned-01/Q11": {
         "zh": "你对待传统的态度？",
@@ -795,8 +795,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "In your ideal world, should we combine everyone’s brains into one collective brain that controls everyone?"
     },
     "economic-planned-01/R6": {
-        "zh": "你的意识形态是：蜂群思维集体主义",
-        "en": "Your result: Hive-Mind Collectivism"
+        "zh": "结果：蜂群思维集体主义",
+        "en": "Result: Hive-Mind Collectivism"
     },
     "economic-planned-01/Q13": {
         "zh": "对斯大林时期的苏联你的态度是？",
@@ -811,8 +811,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "I’m critical of it, and may favor other approaches"
     },
     "economic-planned-01/R7": {
-        "zh": "你的意识形态是：正统马克思主义",
-        "en": "Your result: Orthodox Marxism"
+        "zh": "结果：正统马克思主义",
+        "en": "Result: Orthodox Marxism"
     },
     "economic-planned-01/Q14": {
         "zh": "上述思想在不同国家内实现应该？",
@@ -827,16 +827,16 @@ window.APPROVED_TRANSLATIONS = {
         "en": "With slight adjustments for each country"
     },
     "economic-planned-01/R8": {
-        "zh": "你的意识形态是：左翼共产主义",
-        "en": "Your result: Left Communism"
+        "zh": "结果：左翼共产主义",
+        "en": "Result: Left Communism"
     },
     "economic-planned-01/R9": {
-        "zh": "你的意识形态是：欧洲共产主义",
-        "en": "Your result: Eurocommunism"
+        "zh": "结果：欧洲共产主义",
+        "en": "Result: Eurocommunism"
     },
     "economic-planned-01/R5": {
-        "zh": "你的意识形态是：复兴主义",
-        "en": "Your result: Baathism"
+        "zh": "结果：复兴主义",
+        "en": "Result: Baathism"
     },
     "economic-planned-01/Q10": {
         "zh": "实现上述思想的途径？",
@@ -851,16 +851,16 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Through revolution"
     },
     "economic-planned-01/R3": {
-        "zh": "你的意识形态是：左翼民粹主义",
-        "en": "Your result: Left-Wing Populism"
+        "zh": "结果：左翼民粹主义",
+        "en": "Result: Left-Wing Populism"
     },
     "economic-planned-01/R4": {
-        "zh": "你的意识形态是：托洛茨基主义",
-        "en": "Your result: Trotskyism"
+        "zh": "结果：托洛茨基主义",
+        "en": "Result: Trotskyism"
     },
     "economic-planned-01/R1": {
-        "zh": "你的意识形态是：斯特拉瑟主义",
-        "en": "Your result: Strasserism"
+        "zh": "结果：斯特拉瑟主义",
+        "en": "Result: Strasserism"
     },
     "violence-retaliation-not-priority-01/Q1": {
         "zh": "对于已经发生在了自己身上的暴力事件？",
@@ -883,12 +883,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Do you strongly oppose your country intervening in other countries’ affairs?"
     },
     "violence-retaliation-not-priority-01/R1": {
-        "zh": "你的意识形态是：旧自由意志主义",
-        "en": "Your result: Paleolibertarianism"
+        "zh": "结果：旧自由意志主义",
+        "en": "Result: Paleolibertarianism"
     },
     "violence-retaliation-not-priority-01/R2": {
-        "zh": "你的意识形态是：自由意志保守主义",
-        "en": "Your result: Libertarian Conservatism"
+        "zh": "结果：自由意志保守主义",
+        "en": "Result: Libertarian Conservatism"
     },
     "violence-retaliation-not-priority-01/Q4": {
         "zh": "对于使用新技术升级人类，你的看法是？",
@@ -903,8 +903,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "This isn’t a priority for me"
     },
     "violence-retaliation-not-priority-01/R3": {
-        "zh": "你的意识形态是：自由意志超人类主义",
-        "en": "Your result: Libertarian Transhumanism"
+        "zh": "结果：自由意志超人类主义",
+        "en": "Result: Libertarian Transhumanism"
     },
     "violence-retaliation-not-priority-01/Q5": {
         "zh": "对于自由市场，你的看法是？",
@@ -935,12 +935,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Use communities to separate people with different beliefs"
     },
     "violence-retaliation-not-priority-01/R4": {
-        "zh": "你的意识形态是：社会自由意志主义",
-        "en": "Your result: Social Libertarianism"
+        "zh": "结果：社会自由意志主义",
+        "en": "Result: Social Libertarianism"
     },
     "violence-retaliation-not-priority-01/R5": {
-        "zh": "你的意识形态是：霍普主义",
-        "en": "Your result: Hoppeanism"
+        "zh": "结果：霍普主义",
+        "en": "Result: Hoppeanism"
     },
     "violence-retaliation-not-priority-01/Q8": {
         "zh": "对于别人的行为，你认为？",
@@ -955,12 +955,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Even if I strongly dislike what someone is doing, I won’t interfere unless it actually affects me"
     },
     "violence-retaliation-not-priority-01/R6": {
-        "zh": "你的意识形态是：自由意志主义",
-        "en": "Your result: Libertarianism"
+        "zh": "结果：自由意志主义",
+        "en": "Result: Libertarianism"
     },
     "violence-retaliation-not-priority-01/R7": {
-        "zh": "你的意识形态是：Liberal Libertarianism (自由主义自由意志主义?)",
-        "en": "Your result: Liberal Libertarianism"
+        "zh": "结果：Liberal Libertarianism (自由主义自由意志主义?)",
+        "en": "Result: Liberal Libertarianism"
     },
     "violence-retaliation-not-priority-01/Q9": {
         "zh": "你具体质疑或反对自由市场的哪一方面？",
@@ -975,12 +975,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "I oppose big capitalists but support small ones"
     },
     "violence-retaliation-not-priority-01/R8": {
-        "zh": "你的意识形态是：乔治自由意志主义",
-        "en": "Your result: Geolibertarianism"
+        "zh": "结果：乔治自由意志主义",
+        "en": "Result: Geolibertarianism"
     },
     "violence-retaliation-not-priority-01/R9": {
-        "zh": "你的意识形态是：分产自由意志主义",
-        "en": "Your result: Distributist Libertarianism"
+        "zh": "结果：分产自由意志主义",
+        "en": "Result: Distributist Libertarianism"
     },
     "violence-retaliation-not-priority-01/Q10": {
         "zh": "你如何看待传统价值观（比如传统家庭观念等等）？",
@@ -999,20 +999,20 @@ window.APPROVED_TRANSLATIONS = {
         "en": "I don’t mind either way; others are free to choose"
     },
     "violence-retaliation-not-priority-01/R10": {
-        "zh": "你的意识形态是：科尔温主义",
-        "en": "Your result: Korwinism"
+        "zh": "结果：科尔温主义",
+        "en": "Result: Korwinism"
     },
     "violence-retaliation-not-priority-01/R11": {
-        "zh": "你的意识形态是：新自由保守主义",
-        "en": "Your result: Neoliberal Conservatism"
+        "zh": "结果：新自由保守主义",
+        "en": "Result: Neoliberal Conservatism"
     },
     "violence-retaliation-not-priority-01/R12": {
-        "zh": "你的意识形态是：民族自由主义",
-        "en": "Your result: National Liberalism"
+        "zh": "结果：民族自由主义",
+        "en": "Result: National Liberalism"
     },
     "violence-retaliation-not-priority-01/R13": {
-        "zh": "你的意识形态是：粉色资本主义",
-        "en": "Your result: Pink Capitalism"
+        "zh": "结果：粉色资本主义",
+        "en": "Result: Pink Capitalism"
     },
     "violence-retaliation-not-priority-01/Q12": {
         "zh": "发行货币是否是政府的职责？",
@@ -1031,24 +1031,24 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Should the government enforce antitrust laws?"
     },
     "violence-retaliation-not-priority-01/R14": {
-        "zh": "你的意识形态是：新自由主义",
-        "en": "Your result: Neoliberalism"
+        "zh": "结果：新自由主义",
+        "en": "Result: Neoliberalism"
     },
     "violence-retaliation-not-priority-01/R15": {
-        "zh": "你的意识形态是：古典自由主义",
-        "en": "Your result: Classical Liberalism"
+        "zh": "结果：古典自由主义",
+        "en": "Result: Classical Liberalism"
     },
     "violence-retaliation-not-priority-01/R16": {
-        "zh": "你的意识形态是：小政府主义",
-        "en": "Your result: Minarchism"
+        "zh": "结果：小政府主义",
+        "en": "Result: Minarchism"
     },
     "violence-retaliation-not-priority-01/Q15": {
         "zh": "你是否认为政府除了执行法律外不能有任何职责？",
         "en": "Should enforcing the law be the government’s only responsibility?"
     },
     "violence-retaliation-not-priority-01/R17": {
-        "zh": "你的意识形态是：自愿主义",
-        "en": "Your result: Voluntaryism"
+        "zh": "结果：自愿主义",
+        "en": "Result: Voluntaryism"
     },
     "violence-retaliation-not-priority-01/Q16": {
         "zh": "关于自由市场？",
@@ -1063,12 +1063,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "It’s an expression of individual freedom"
     },
     "violence-retaliation-not-priority-01/R18": {
-        "zh": "你的意识形态是：哈耶克主义",
-        "en": "Your result: Hayekism"
+        "zh": "结果：哈耶克主义",
+        "en": "Result: Hayekism"
     },
     "violence-retaliation-not-priority-01/R19": {
-        "zh": "你的意识形态是：客观主义",
-        "en": "Your result: Objectivism"
+        "zh": "结果：客观主义",
+        "en": "Result: Objectivism"
     },
     "personal-freedom-01/Q1": {
         "zh": "对于个人行为的自由，你认为？",
@@ -1087,24 +1087,24 @@ window.APPROVED_TRANSLATIONS = {
         "en": "It’s okay for people to do what they want, even if it harms others"
     },
     "personal-freedom-01/R1": {
-        "zh": "你的意识形态是：无政府自由主义",
-        "en": "Your result: Anarcho-Liberalism"
+        "zh": "结果：无政府自由主义",
+        "en": "Result: Anarcho-Liberalism"
     },
     "personal-freedom-01/Q2": {
         "zh": "你是否认为任何形式的宗教、法律、道德等等都是没有意义的",
         "en": "Do you think all forms of religion, law, morality, and similar systems are meaningless?"
     },
     "personal-freedom-01/R2": {
-        "zh": "你的意识形态是：无政府虚无主义",
-        "en": "Your result: Anarcho-Nihilism"
+        "zh": "结果：无政府虚无主义",
+        "en": "Result: Anarcho-Nihilism"
     },
     "personal-freedom-01/R3": {
-        "zh": "你的意识形态是：无政府资本主义",
-        "en": "Your result: Anarcho-Capitalism"
+        "zh": "结果：无政府资本主义",
+        "en": "Result: Anarcho-Capitalism"
     },
     "personal-freedom-01/R4": {
-        "zh": "你的意识形态是：自我达尔文主义",
-        "en": "Your result: Avaritionism"
+        "zh": "结果：自我达尔文主义",
+        "en": "Result: Avaritionism"
     },
     "means-of-production-01/Q5": {
         "zh": "那生产资料具体应该由谁掌控？",
@@ -1163,64 +1163,64 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Does the country need a monarch?"
     },
     "means-of-production-01/R1": {
-        "zh": "你的意识形态是：绿色自由主义",
-        "en": "Your result: Green Liberalism"
+        "zh": "结果：绿色自由主义",
+        "en": "Result: Green Liberalism"
     },
     "means-of-production-01/R3": {
-        "zh": "你的意识形态是：北欧模式",
-        "en": "Your result: Nordic Model"
+        "zh": "结果：北欧模式",
+        "en": "Result: Nordic Model"
     },
     "means-of-production-01/R4": {
-        "zh": "你的意识形态是：进步主义",
-        "en": "Your result: Progressivism"
+        "zh": "结果：进步主义",
+        "en": "Result: Progressivism"
     },
     "means-of-production-01/R5": {
-        "zh": "你的意识形态是：乔治主义",
-        "en": "Your result: Georgism"
+        "zh": "结果：乔治主义",
+        "en": "Result: Georgism"
     },
     "means-of-production-01/R6": {
-        "zh": "你的意识形态是：民主社会主义",
-        "en": "Your result: Democratic Socialism"
+        "zh": "结果：民主社会主义",
+        "en": "Result: Democratic Socialism"
     },
     "means-of-production-01/R7": {
-        "zh": "你的意识形态是：自由意志社会主义",
-        "en": "Your result: Libertarian Socialism"
+        "zh": "结果：自由意志社会主义",
+        "en": "Result: Libertarian Socialism"
     },
     "means-of-production-01/R8": {
-        "zh": "你的意识形态是：小政府社会主义",
-        "en": "Your result: Minarcho-Socialism"
+        "zh": "结果：小政府社会主义",
+        "en": "Result: Minarcho-Socialism"
     },
     "means-of-production-01/R9": {
-        "zh": "你的意识形态是：基督教社会主义",
-        "en": "Your result: Christian Socialism"
+        "zh": "结果：基督教社会主义",
+        "en": "Result: Christian Socialism"
     },
     "means-of-production-01/R10": {
-        "zh": "你的意识形态是：市场社会主义",
-        "en": "Your result: Market Socialism"
+        "zh": "结果：市场社会主义",
+        "en": "Result: Market Socialism"
     },
     "means-of-production-01/R11": {
-        "zh": "你的意识形态是：委员会共产主义",
-        "en": "Your result: Council Communism"
+        "zh": "结果：委员会共产主义",
+        "en": "Result: Council Communism"
     },
     "means-of-production-01/R12": {
-        "zh": "你的意识形态是：自由社会主义",
-        "en": "Your result: Liberal Socialism"
+        "zh": "结果：自由社会主义",
+        "en": "Result: Liberal Socialism"
     },
     "means-of-production-01/R13": {
-        "zh": "你的意识形态是：君主制工团主义",
-        "en": "Your result: Monarcho-Syndicalism"
+        "zh": "结果：君主制工团主义",
+        "en": "Result: Monarcho-Syndicalism"
     },
     "means-of-production-01/R14": {
-        "zh": "你的意识形态是：工团主义",
-        "en": "Your result: Syndicalism"
+        "zh": "结果：工团主义",
+        "en": "Result: Syndicalism"
     },
     "means-of-production-01/R15": {
-        "zh": "你的意识形态是：空想社会主义",
-        "en": "Your result: Utopian Socialism"
+        "zh": "结果：空想社会主义",
+        "en": "Result: Utopian Socialism"
     },
     "means-of-production-01/R16": {
-        "zh": "你的意识形态是：公社主义",
-        "en": "Your result: Communalism"
+        "zh": "结果：公社主义",
+        "en": "Result: Communalism"
     },
     "free-market-01/Q1": {
         "zh": "你是否支持在社会中应该有自由市场？",
@@ -1231,12 +1231,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Should society be organized into multiple labor unions?"
     },
     "free-market-01/R1": {
-        "zh": "你的意识形态是：工团互助主义",
-        "en": "Your result: Syndicalist Mutualism"
+        "zh": "结果：工团互助主义",
+        "en": "Result: Syndicalist Mutualism"
     },
     "free-market-01/R2": {
-        "zh": "你的意识形态是：互助主义",
-        "en": "Your result: Mutualism"
+        "zh": "结果：互助主义",
+        "en": "Result: Mutualism"
     },
     "free-market-01/Q3": {
         "zh": "个人和社会哪个更重要？",
@@ -1251,12 +1251,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Do you believe all of humanity must return to the Stone Age to achieve these ideals?"
     },
     "free-market-01/R3": {
-        "zh": "你的意识形态是：无政府原始主义",
-        "en": "Your result: Anarcho-Primitivism"
+        "zh": "结果：无政府原始主义",
+        "en": "Result: Anarcho-Primitivism"
     },
     "free-market-01/R4": {
-        "zh": "你的意识形态是：自我主义",
-        "en": "Your result: Egoism"
+        "zh": "结果：自我主义",
+        "en": "Result: Egoism"
     },
     "free-market-01/Q5": {
         "zh": "你反对暴力革命吗？",
@@ -1283,12 +1283,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "If they want to reestablish a state, they should at least adopt a suitable system of government."
     },
     "free-market-01/R5": {
-        "zh": "你的意识形态是：民主邦联主义",
-        "en": "Your result: Democratic Confederalism"
+        "zh": "结果：民主邦联主义",
+        "en": "Result: Democratic Confederalism"
     },
     "free-market-01/R6": {
-        "zh": "你的意识形态是：Libertarian Municipalism (自由意志市政主义?)",
-        "en": "Your result: Libertarian Municipalism"
+        "zh": "结果：Libertarian Municipalism (自由意志市政主义?)",
+        "en": "Result: Libertarian Municipalism"
     },
     "free-market-01/Q8": {
         "zh": "对于物理规律（重力、惯性等）？",
@@ -1303,12 +1303,12 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Wait, what??? (We shouldn’t abolish them / This isn’t a priority.)"
     },
     "free-market-01/R7": {
-        "zh": "你的意识形态是：灵魂主义",
-        "en": "Your result: Soulism"
+        "zh": "结果：灵魂主义",
+        "en": "Result: Soulism"
     },
     "free-market-01/R8": {
-        "zh": "你的意识形态是：无政府和平主义",
-        "en": "Your result: Anarcho-Pacifism"
+        "zh": "结果：无政府和平主义",
+        "en": "Result: Anarcho-Pacifism"
     },
     "free-market-01/Q9": {
         "zh": "在社会中被生产出来的资源应该如何分配？",
@@ -1327,16 +1327,16 @@ window.APPROVED_TRANSLATIONS = {
         "en": "According to need, without going through communities or labor unions"
     },
     "free-market-01/R9": {
-        "zh": "你的意识形态是：无政府工团主义",
-        "en": "Your result: Anarcho-Syndicalism"
+        "zh": "结果：无政府工团主义",
+        "en": "Result: Anarcho-Syndicalism"
     },
     "free-market-01/R10": {
-        "zh": "你的意识形态是：社会无政府主义",
-        "en": "Your result: Social Anarchism"
+        "zh": "结果：社会无政府主义",
+        "en": "Result: Social Anarchism"
     },
     "free-market-01/R11": {
-        "zh": "你的意识形态是：无政府共产主义",
-        "en": "Your result: Anarcho-Communism"
+        "zh": "结果：无政府共产主义",
+        "en": "Result: Anarcho-Communism"
     },
     "notes-01/title": {
         "zh": "笔记",
@@ -1401,6 +1401,14 @@ window.APPROVED_TRANSLATIONS = {
     "notes-01/results-note": {
         "zh": "•最后的结果对于越不了解政治的人可能越准确，因为不了解政治的人通常没有什么独特的观点组合，因此一共的103个结果大概率能包括这些人的想法",
         "en": "• The quiz may be more accurate for people who are less familiar with politics. Their views tend to fall into more common combinations, making them more likely to fit one of the quiz’s 103 possible results."
+    },
+    "history-01/v1.7.1a-heading": {
+        "zh": "1.7.1a-2026.10.15",
+        "en": "1.7.1a — October 15, 2026"
+    },
+    "history-01/v1.7.1a-result-labels": {
+        "zh": "•简化中英文结果页标题文案。",
+        "en": "• Simplified the result page headings in Chinese and English."
     },
     "history-01/v1.7.0a-heading": {
         "zh": "1.7.0a-2026.10.13",
