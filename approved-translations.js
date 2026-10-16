@@ -146,10 +146,6 @@ window.APPROVED_TRANSLATIONS = {
         "zh": "版本：",
         "en": "Version:"
     },
-    "social-democracy-01/X3": {
-        "zh": "原项目无中文；当前英文为 Result Image",
-        "en": "Result Image"
-    },
     "fascism-01/Q3": {
         "zh": "土地所有权多数应该归？",
         "en": "Who should own most of the land?"
@@ -197,10 +193,6 @@ window.APPROVED_TRANSLATIONS = {
     "fascism-01/R1": {
         "zh": "结果：法西斯主义",
         "en": "Result: Fascism"
-    },
-    "fascism-01/X3": {
-        "zh": "原项目无中文；当前英文为 Result Image",
-        "en": "Result Image"
     },
     "nazism-01/R1": {
         "zh": "结果：纳粹主义",
@@ -1401,6 +1393,14 @@ window.APPROVED_TRANSLATIONS = {
     "notes-01/results-note": {
         "zh": "•最后的结果对于越不了解政治的人可能越准确，因为不了解政治的人通常没有什么独特的观点组合，因此一共的103个结果大概率能包括这些人的想法",
         "en": "• The quiz may be more accurate for people who are less familiar with politics. Their views tend to fall into more common combinations, making them more likely to fit one of the quiz’s 103 possible results."
+    },
+    "history-01/v1.7.2a-heading": {
+        "zh": "1.7.2a-2026.10.13",
+        "en": "1.7.2a — October 13, 2026"
+    },
+    "history-01/v1.7.2a-result-images": {
+        "zh": "•删除结果页面的图片。",
+        "en": "• Removed images from result pages."
     },
     "history-01/v1.7.1a-heading": {
         "zh": "1.7.1a-2026.10.15",

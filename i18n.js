@@ -29,6 +29,8 @@
         notesTitleActions: 'notes-01/title-actions',
         notesResultsHeading: 'notes-01/results-heading',
         notesResultsNote: 'notes-01/results-note',
+        history172aHeading: 'history-01/v1.7.2a-heading',
+        history172aResultImages: 'history-01/v1.7.2a-result-images',
         history171aHeading: 'history-01/v1.7.1a-heading',
         history171aResultLabels: 'history-01/v1.7.1a-result-labels',
         history170aHeading: 'history-01/v1.7.0a-heading',
@@ -430,10 +432,6 @@
         SocialAnarchism: 'free-market-01/R10',
         AnarchoCommunism: 'free-market-01/R11'
     };
-    const resultImageIds = {
-        SocialDemocracy: 'social-democracy-01/X3',
-        Fascism: 'fascism-01/X3'
-    };
 
     function resolveLanguage() {
         const requested = new URLSearchParams(window.location.search).get('lang');
@@ -519,9 +517,6 @@
         applyPageLanguage,
         questionText: (key, original) => text(questionIds[key], original),
         optionText,
-        resultText: (key, original) => text(resultIds[key], original),
-        resultImageAlt: (key, original) => language === 'en'
-            ? copy[resultImageIds[key]]?.en ?? original
-            : original
+        resultText: (key, original) => text(resultIds[key], original)
     };
 })();

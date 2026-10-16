@@ -55,7 +55,7 @@ function switchLanguage() {
 }
 
 function showVersion() {
-    alert(SiteI18n.ui('versionLabel') + ' alpha-1.7.1a-2026.10.15');
+    alert(SiteI18n.ui('versionLabel') + ' alpha-1.7.2a-2026.10.13');
 }
 
 function games() {

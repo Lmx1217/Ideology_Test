@@ -182,7 +182,6 @@ test('all approved routes have English questions, all answer options, and the sa
         }
         assert.equal(key, route.result);
         assert.equal(i18n.resultText(key, questions[key].result), route.text);
-        assert.equal(i18n.resultImageAlt(key, 'Result Image'), 'Result Image');
     }
     assert.equal(JSON.stringify(questions), original, 'Localization must not mutate questions or branches');
 });
@@ -325,7 +324,6 @@ test('production copy contains only source/selected-English pairs; every approve
             for (const [option, chinese] of Object.entries(question.options)) used.add(i18n.optionText(key, option, chinese));
         } else {
             used.add(i18n.resultText(key, question.result));
-            used.add(i18n.resultImageAlt(key, 'Result Image'));
         }
     }
     for (const [id, entry] of Object.entries(copy)) {
