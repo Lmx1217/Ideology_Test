@@ -79,15 +79,6 @@ h1 {
     transition: width 0.5s ease;
 }
 
-#result-image {
-    display: none;
-    margin-top: 20px;
-    max-width: 100%; /* 确保图片不会超过容器宽度 */
-    height: auto;
-    width: 50%; /* 调整图片宽度 */
-    margin: 20px auto; /* 居中显示 */
-}
-
 .restart-button {
     width: 20%; /* 设置“再来一次”按钮的宽度 */
     margin: 10px auto; /* 确保按钮居中 */
@@ -241,10 +232,6 @@ html[lang="en"] .restart-button {
         font-size: 0.8em;
     }
 
-    #result-image {
-        width: 90%;
-    }
-    
     .restart-button {
         width: 30%;
         padding: 8px;

@@ -991,423 +991,318 @@ const questions = {
         }
     },
     Integralism: {
-        result: "结果：整合主义",
-        image: "Integralism_img.png"
+        result: "结果：整合主义"
     },
     Corporatism: {
-        result: "结果：法团主义",
-        image: "Corporatism_img.png"
+        result: "结果：法团主义"
     },
     Mercantilism: {
-        result: "结果：重商主义",
-        image: "Mercantilism_img.png"
+        result: "结果：重商主义"
     },
     Bismarckism: {
-        result: "结果：俾斯麦主义",
-        image: "Bismarckism_img.jpeg"
+        result: "结果：俾斯麦主义"
     },
     Homoconservatism: {
-        result: "结果：LGBT保守主义",
-        image: "Homoconservatism_img.png"
+        result: "结果：LGBT保守主义"
     },
     Reactionary: {
-        result: "结果：反动主义",
-        image: "Reactionary_img.png"
+        result: "结果：反动主义"
     },
     Fascism: {
-        result: "结果：法西斯主义",
-        image: "Fascism_img.png"
+        result: "结果：法西斯主义"
     },
     NationalSocialism: {
-        result: "结果：纳粹主义",
-        image: "NationalSocialism_img.png"
+        result: "结果：纳粹主义"
     },
     Monarchism: {
-        result: "结果：君主制",
-        image: "Monarchism_img.png"
+        result: "结果：君主制"
     },
     Imperialism: {
-        result: "结果：帝国主义",
-        image: "Imperialism_img.png"
+        result: "结果：帝国主义"
     },
     IngSoc: {
-        result: "结果：英社主义",
-        image: "IngSoc_img.png"
+        result: "结果：英社主义"
     },
     Kraterocracy: {
-        result: "结果：Kraterocracy (独裁主义?)",
-        image: "Kraterocracy_img.png"
+        result: "结果：Kraterocracy (独裁主义?)"
     },
     AuthoritarianCapitalism: {
-        result: "结果：威权资本主义",
-        image: "AuthoritarianCapitalism_img.png"
+        result: "结果：威权资本主义"
     },
     Pinochetism: {
-        result: "结果：皮诺切特主义",
-        image: "Pinochetism_img.png"
+        result: "结果：皮诺切特主义"
     },
     Trumpism: {
-        result: "结果：特朗普主义",
-        image: "Trumpism_img.png"
+        result: "结果：特朗普主义"
     },
     Conservatism: {
-        result: "结果：保守主义",
-        image: "Conservatism_img.png"
+        result: "结果：保守主义"
     },
     SocialDarwinism: {
-        result: "结果：社会达尔文主义",
-        image: "SocialDarwinism_img.png"
+        result: "结果：社会达尔文主义"
     },
     WhiteNationalism: {
-        result: "结果：白人至上主义",
-        image: "WhiteNationalism_img.png"
+        result: "结果：白人至上主义"
     },
     NationalCapitalism: {
-        result: "结果：民族资本主义",
-        image: "NationalCapitalism_img.png"
+        result: "结果：民族资本主义"
     },
     ConstitutionalMonarchism: {
-        result: "结果：君主立宪制",
-        image: "ConstitutionalMonarchism_img.png"
+        result: "结果：君主立宪制"
     },
     ChristianDemocracy: {
-        result: "结果：基督教民主主义",
-        image: "ChristianDemocracy_img.png"
+        result: "结果：基督教民主主义"
     },
     Liberalism: {
-        result: "结果：自由主义",
-        image: "Liberalism_img.png"
+        result: "结果：自由主义"
     },
     OrdoLiberalism: {
-        result: "结果：秩序自由主义",
-        image: "OrdoLiberalism_img.png"
+        result: "结果：秩序自由主义"
     },
     LiberalConservatism: {
-        result: "结果：自由保守主义",
-        image: "LiberalConservatism_img.png"
+        result: "结果：自由保守主义"
     },
     StateLiberalism: {
-        result: "结果：国家自由主义",
-        image: "StateLiberalism_img.png"
+        result: "结果：国家自由主义"
     },
     EconomicLiberalism: {
-        result: "结果：经济自由主义",
-        image: "EconomicLiberalism_img.png"
+        result: "结果：经济自由主义"
     },
     Neoconservatism: {
-        result: "结果：新保守主义",
-        image: "Neoconservatism_img.png"
+        result: "结果：新保守主义"
     },
     Reaganism: {
-        result: "结果：里根主义",
-        image: "Reaganism_img.png"
+        result: "结果：里根主义"
     },
     ThirdWay: {
-        result: "结果：第三条道路",
-        image: "ThirdWay_img.png"
+        result: "结果：第三条道路"
     },
     Distributism: {
-        result: "结果：分产主义",
-        image: "Distributism_img.png"
+        result: "结果：分产主义"
     },
     Titoism: {
-        result: "结果：铁托主义",
-        image: "Titoism_img.png"
+        result: "结果：铁托主义"
     },
     Longism: {
-        result: "结果：休伊•朗主义",
-        image: "Longism_img.png"
+        result: "结果：休伊•朗主义"
     },
     EnlightenedAbsolutism: {
-        result: "结果：开明君主制",
-        image: "EnlightenedAbsolutism_img.png"
+        result: "结果：开明君主制"
     },
     SocialistTranshumanism: {
-        result: "结果：社会主义超人类主义",
-        image: "SocialistTranshumanism_img.png"
+        result: "结果：社会主义超人类主义"
     },
     Strasserism: {
-        result: "结果：斯特拉瑟主义",
-        image: "Strasserism_img.png"
+        result: "结果：斯特拉瑟主义"
     },
     Collectivism: {
-        result: "结果：集体主义",
-        image: "Collectivism_img.png"
+        result: "结果：集体主义"
     },
     LeftWingPopulism: {
-        result: "结果：左翼民粹主义",
-        image: "LeftWingPopulism_img.png"
+        result: "结果：左翼民粹主义"
     },
     Trotskyism: {
-        result: "结果：托洛茨基主义",
-        image: "Trotskyism_img.png"
+        result: "结果：托洛茨基主义"
     },
     Baathism: {
-        result: "结果：复兴主义",
-        image: "Baathism_img.png"
+        result: "结果：复兴主义"
     },
     HiveMindCollectivism: {
-        result: "结果：蜂群思维集体主义",
-        image: "HiveMindCollectivism_img.png"
+        result: "结果：蜂群思维集体主义"
     },
     Marxism: {
-        result: "结果：正统马克思主义",
-        image: "Marxism_img.png"
+        result: "结果：正统马克思主义"
     },
     LeftCommunism: {
-        result: "结果：左翼共产主义",
-        image: "LeftCommunism_img.png"
+        result: "结果：左翼共产主义"
     },
     Eurocommunism: {
-        result: "结果：欧洲共产主义",
-        image: "Eurocommunism_img.png"
+        result: "结果：欧洲共产主义"
     },
     NationalSyndicalism: {
-        result: "结果：民族工团主义",
-        image: "NationalSyndicalism_img.png"
+        result: "结果：民族工团主义"
     },
     NationalBolshevism: {
-        result: "结果：民族布尔什维克主义",
-        image: "NationalBolshevism_img.png"
+        result: "结果：民族布尔什维克主义"
     },
     Bolsheviknationalism: {
-        result: "结果：布尔什维克民族主义",
-        image: "Bolsheviknationalism_img.png"
+        result: "结果：布尔什维克民族主义"
     },
     Stalinism: {
-        result: "结果：斯大林主义",
-        image: "Stalinism_img.png"
+        result: "结果：斯大林主义"
     },
     Maoism: {
-        result: "结果：毛泽东思想",
-        image: "Maoism_img.png"
+        result: "结果：毛泽东思想"
     },
     Castroism: {
-        result: "结果：卡斯特罗主义",
-        image: "Castroism_img.png"
+        result: "结果：卡斯特罗主义"
     },
     MonarchoSocialism: {
-        result: "结果：君主制社会主义",
-        image: "MonarchoSocialism_img.png"
+        result: "结果：君主制社会主义"
     },
     Mugabeism: {
-        result: "结果：穆加贝主义",
-        image: "Mugabeism_img.png"
+        result: "结果：穆加贝主义"
     },
     LeftWingNationalism: {
-        result: "结果：左翼民族主义",
-        image: "LeftWingNationalism_img.png"
+        result: "结果：左翼民族主义"
     },
     Jacobinism: {
-        result: "结果：雅各宾派",
-        image: "Jacobinism_img.png"
+        result: "结果：雅各宾派"
     },
     SyndicalistMutualism: {
-        result: "结果：工团互助主义",
-        image: "SyndicalistMutualism_img.png"
+        result: "结果：工团互助主义"
     },
     Mutualism: {
-        result: "结果：互助主义",
-        image: "Mutualism_img.png"
+        result: "结果：互助主义"
     },
     AnarchoPrimitivism: {
-        result: "结果：无政府原始主义",
-        image: "AnarchoPrimitivism_img.png"
+        result: "结果：无政府原始主义"
     },
     Egoism: {
-        result: "结果：自我主义",
-        image: "Egoism_img.png"
+        result: "结果：自我主义"
     },
     AnarchoSyndicalism: {
-        result: "结果：无政府工团主义",
-        image: "AnarchoSyndicalism_img.png"
+        result: "结果：无政府工团主义"
     },
     SocialAnarchism: {
-        result: "结果：社会无政府主义",
-        image: "SocialAnarchism_img.png"
+        result: "结果：社会无政府主义"
     },
     AnarchoCommunism: {
-        result: "结果：无政府共产主义",
-        image: "AnarchoCommunism_img.jpeg"
+        result: "结果：无政府共产主义"
     },
     DemocraticConfederalism: {
-        result: "结果：民主邦联主义",
-        image: "DemocraticConfederalism_img.png"
+        result: "结果：民主邦联主义"
     },
     LibertarianMunicipalism: {
-        result: "结果：Libertarian Municipalism (自由意志市政主义?)",
-        image: "LibertarianMunicipalism_img.png"
+        result: "结果：Libertarian Municipalism (自由意志市政主义?)"
     },
     Soulism: {
-        result: "结果：灵魂主义",
-        image: "Soulism_img.png"
+        result: "结果：灵魂主义"
     },
     AnarchoPacifism: {
-        result: "结果：无政府和平主义",
-        image: "AnarchoPacifism_img.png"
+        result: "结果：无政府和平主义"
     },
     Communalism: {
-        result: "结果：公社主义",
-        image: "Communalism_img.png"
+        result: "结果：公社主义"
     },
     GreenLiberalism: {
-        result: "结果：绿色自由主义",
-        image: "GreenLiberalism_img.png"
+        result: "结果：绿色自由主义"
     },
     Georgism: {
-        result: "结果：乔治主义",
-        image: "Georgism_img.png"
+        result: "结果：乔治主义"
     },
     Progressivism: {
-        result: "结果：进步主义",
-        image: "Progressivism_img.png"
+        result: "结果：进步主义"
     },
     SocialDemocracy: {
-        result: "结果：社会民主主义",
-        image: "SocialDemocracy_img.png"
+        result: "结果：社会民主主义"
     },
     NordicModel: {
-        result: "结果：北欧模式",
-        image: "NordicModel_img.png"
+        result: "结果：北欧模式"
     },
     DemocraticSocialism: {
-        result: "结果：民主社会主义",
-        image: "DemocraticSocialism_img.png"
+        result: "结果：民主社会主义"
     },
     LiberalSocialism: {
-        result: "结果：自由社会主义",
-        image: "LiberalSocialism_img.png"
+        result: "结果：自由社会主义"
     },
     UtopianSocialism: {
-        result: "结果：空想社会主义",
-        image: "UtopianSocialism_img.png"
+        result: "结果：空想社会主义"
     },
     MonarchoSyndicalism: {
-        result: "结果：君主制工团主义",
-        image: "MonarchoSyndicalism_img.png"
+        result: "结果：君主制工团主义"
     },
     Syndicalism: {
-        result: "结果：工团主义",
-        image: "Syndicalism_img.png"
+        result: "结果：工团主义"
     },
     LibertarianSocialism: {
-        result: "结果：自由意志社会主义",
-        image: "LibertarianSocialism_img.png"
+        result: "结果：自由意志社会主义"
     },
     MinarchoSocialism: {
-        result: "结果：小政府社会主义",
-        image: "MinarchoSocialism_img.png"
+        result: "结果：小政府社会主义"
     },
     ChristianSocialism: {
-        result: "结果：基督教社会主义",
-        image: "ChristianSocialism_img.png"
+        result: "结果：基督教社会主义"
     },
     MarketSocialism: {
-        result: "结果：市场社会主义",
-        image: "MarketSocialism_img.png"
+        result: "结果：市场社会主义"
     },
     CouncilCommunism: {
-        result: "结果：委员会共产主义",
-        image: "CouncilCommunism_img.png"
+        result: "结果：委员会共产主义"
     },
     AnarchoLiberalism: {
-        result: "结果：无政府自由主义",
-        image: "AnarchoLiberalism_img.png"
+        result: "结果：无政府自由主义"
     },
     Avaritionism: {
-        result: "结果：自我达尔文主义",
-        image: "Avaritionism_img.png"
+        result: "结果：自我达尔文主义"
     },
     AnarchoNihilism: {
-        result: "结果：无政府虚无主义",
-        image: "AnarchoNihilism_img.png"
+        result: "结果：无政府虚无主义"
     },
     AnarchoCapitalism: {
-        result: "结果：无政府资本主义",
-        image: "AnarchoCapitalism_img.png"
+        result: "结果：无政府资本主义"
     },
     PinkCapitalism: {
-        result: "结果：粉色资本主义",
-        image: "PinkCapitalism_img.png"
+        result: "结果：粉色资本主义"
     },
     Korwinism: {
-        result: "结果：科尔温主义",
-        image: "Korwinism_img.png"
+        result: "结果：科尔温主义"
     },
     NeoliberalConservatism: {
-        result: "结果：新自由保守主义",
-        image: "NeoliberalConservatism_img.png"
+        result: "结果：新自由保守主义"
     },
     NationalLiberalism: {
-        result: "结果：民族自由主义",
-        image: "NationalLiberalism_img.png"
+        result: "结果：民族自由主义"
     },
     Voluntaryism: {
-        result: "结果：自愿主义",
-        image: "Voluntaryism_img.png"
+        result: "结果：自愿主义"
     },
     Hayekism: {
-        result: "结果：哈耶克主义",
-        image: "Hayekism_img.png"
+        result: "结果：哈耶克主义"
     },
     Objectivism: {
-        result: "结果：客观主义",
-        image: "Objectivism_img.png"
+        result: "结果：客观主义"
     },
     Minarchism: {
-        result: "结果：小政府主义",
-        image: "Minarchism_img.png"
+        result: "结果：小政府主义"
     },
     Neoliberalism: {
-        result: "结果：新自由主义",
-        image: "Neoliberalism_img.png"
+        result: "结果：新自由主义"
     },
     ClassicalLiberalism: {
-        result: "结果：古典自由主义",
-        image: "ClassicalLiberalism_img.png"
+        result: "结果：古典自由主义"
     },
     Paleolibertarianism: {
-        result: "结果：旧自由意志主义",
-        image: "Paleolibertarianism_img.png"
+        result: "结果：旧自由意志主义"
     },
     LibertarianConservatism: {
-        result: "结果：自由意志保守主义",
-        image: "LibertarianConservatism_img.png"
+        result: "结果：自由意志保守主义"
     },
     LibertarianTranshumanism: {
-        result: "结果：自由意志超人类主义",
-        image: "LibertarianTranshumanism_img.png"
+        result: "结果：自由意志超人类主义"
     },
     Geolibertarianism: {
-        result: "结果：乔治自由意志主义",
-        image: "Geolibertarianism_img.png"
+        result: "结果：乔治自由意志主义"
     },
     DistributistLibertarianism: {
-        result: "结果：分产自由意志主义",
-        image: "DistributistLibertarianism_img.png"
+        result: "结果：分产自由意志主义"
     },
     SocialLibertarianism: {
-        result: "结果：社会自由意志主义",
-        image: "SocialLibertarianism_img.png"
+        result: "结果：社会自由意志主义"
     },
     Hoppeanism: {
-        result: "结果：霍普主义",
-        image: "Hoppeanism_img.png"
+        result: "结果：霍普主义"
     },
     Libertarianism: {
-        result: "结果：自由意志主义",
-        image: "Libertarianism_img.png"
+        result: "结果：自由意志主义"
     },
     LiberalLibertarianism: {
-        result: "结果：Liberal Libertarianism (自由主义自由意志主义?)",
-        image: ""
+        result: "结果：Liberal Libertarianism (自由主义自由意志主义?)"
     },
     StateCapitalism: {
-        result: "结果：国家资本主义",
-        image: "StateCapitalism_img.png"
+        result: "结果：国家资本主义"
     },
     SocialismwithChinesecharacteristics: {
-        result: "结果：中国特色社会主义",
-        image: "SocialismwithChinesecharacteristics_img.png"
+        result: "结果：中国特色社会主义"
     }
 };

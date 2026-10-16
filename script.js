@@ -50,15 +50,6 @@ function selectOption(option) {
         } else if (questions[nextKey].result) {
             document.getElementById('question').innerText = SiteI18n.resultText(nextKey, questions[nextKey].result);
 
-            const resultImage = document.getElementById('result-image');
-            resultImage.alt = SiteI18n.resultImageAlt(nextKey, 'Result Image');
-            if (questions[nextKey].image) {
-                resultImage.src = questions[nextKey].image;
-                resultImage.style.display = 'block';
-            } else {
-                resultImage.style.display = 'none';
-            }
-
             const optionsContainer = document.getElementById('options-container');
             optionsContainer.innerHTML = ''; // 清空选项
 
@@ -100,8 +91,6 @@ function loadQuestion(questionKey) {
 
     const backButton = document.getElementById('back-button');
     backButton.style.display = path.length > 1 ? 'block' : 'none';
-
-    document.getElementById('result-image').style.display = 'none'; // 隐藏结果图片
 }
 
 function restartQuiz() {
@@ -119,14 +108,10 @@ function goBack() {
     const optionsContainer = document.getElementById('options-container');
     const loadingContainer = document.getElementById('loading-container');
     const backButton = document.getElementById('back-button');
-    const resultImage = document.getElementById('result-image');
 
     loadingContainer.style.display = 'none';
     questionContainer.style.display = 'block';
     optionsContainer.style.display = 'block';
-
-    // 隐藏结果图片
-    resultImage.style.display = 'none';
 
     // 恢复到加载进度条前的路径
     if (previousPath.length > 0) {

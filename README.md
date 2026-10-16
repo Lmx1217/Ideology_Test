@@ -11,14 +11,12 @@ The project brings together political concepts, decision-tree modeling, interfac
 | --- | --- |
 | Question nodes | 87 across the full tree |
 | Answer choices | 191 across those nodes |
-| Possible results | 105, with illustrations for 104 |
+| Possible results | 105, presented as text |
 | Questions per completed attempt | 4–9, depending on the chosen path |
 | Main-site languages | English and Simplified Chinese |
 | Implementation | HTML, CSS, vanilla JavaScript; optional Node.js feedback server |
 
 These counts describe the current `logical.js` implementation. A visitor follows one branch rather than answering all 87 questions.
-
-The result illustrations are third-party artwork from multiple ball-themed wikis. See [Image credits](#image-credits) for attribution.
 
 ## Run locally
 
@@ -45,7 +43,7 @@ For the quiz alone, opening `index.html` directly in a modern browser also works
 
 ## How the decision tree works
 
-[`logical.js`](logical.js) stores both questions and results in one keyed object. A question contains its text, an `options` map, and a `next` map connecting each option to another node. A terminal node contains a result label and an optional image path.
+[`logical.js`](logical.js) stores both questions and results in one keyed object. A question contains its text, an `options` map, and a `next` map connecting each option to another node. A terminal node contains a result label.
 
 [`script.js`](script.js) starts at `initial`, renders the current question, and follows the selected option's destination. The same sequence of answers always produces the same result. Classification uses these authored rules; it does not calculate a numerical ideology score or use a trained model. The progress animation between questions is a visual transition.
 
@@ -106,7 +104,6 @@ The server binds to `127.0.0.1`, validates host and origin headers, limits reque
 | [`translation-review/`](translation-review/) | Translation review, persistence, export/import, and its tests |
 | [`games/snake/`](games/snake/) | Standalone Canvas game |
 | [`i18n.test.cjs`](i18n.test.cjs) | Main-site localization and route regression tests |
-| `*_img.png`, `*_img.jpeg` | Result illustrations |
 | `logic map English.xmind`, `logic map Chinese.xmind` | Visual documentation of the branches |
 
 ## Verification
@@ -127,7 +124,7 @@ node --test translation-review/review.test.cjs
 
 **Verification snapshot — October 15, 2026:** all 12 main-site tests passed. The review-tool suite passed 16 of 23 tests; seven source-consistency checks failed because review data still contains the older Chinese result prefix `你的意识形态是：`, while the current quiz uses `结果：`. Those review records need reconciliation with the updated production wording.
 
-A traversal of the current graph also confirmed that all 192 nodes are reachable from `initial`, every answer has a valid destination, there are no cycles, and all 104 referenced result illustrations exist. These checks establish structural consistency, not the accuracy of political classification.
+A traversal of the current graph also confirmed that all 192 nodes are reachable from `initial`, every answer has a valid destination, and there are no cycles. These checks establish structural consistency, not the accuracy of political classification.
 
 ## Development history
 
@@ -139,16 +136,16 @@ The [in-app version history](history.html) records the project's development in 
 | July 2024 | Original 103-result milestone, homepage and guidance updates, themes, mini-game, then two additional results |
 | October 2026 | English localization, translation-review workflow, local result feedback, and simplified result headings |
 
-The version currently displayed by the homepage is **alpha-1.7.1a**, dated October 15, 2026.
+The version currently displayed by the homepage is **alpha-1.7.2a**, dated October 13, 2026. This release removes images from result pages.
 
-## Image credits
+## Result presentation
 
-All images displayed on the quiz's result pages were sourced from multiple ball-themed wikis. They were not created by the author of this project. Credit for these illustrations belongs to their original creators and the contributing wiki communities.
+Current result pages display text only. Earlier versions included third-party illustrations sourced from multiple ball-themed wikis; those illustrations have been removed from the current project files. They were not created by the author of this project. Earlier Git commits still contain the original assets.
 
 ## Scope and current limitations
 
 This is an exploratory project for engaging with political ideas. A short decision tree simplifies complex and sometimes overlapping beliefs, and its results reflect the assumptions built into its questions and branches. No empirical validation of classification accuracy is included in the repository. The result set also contains fictional and internet-community labels alongside historical and contemporary political traditions; inclusion is not an endorsement.
 
-Some supporting text still refers to the earlier total of 103 results, while the current code contains 105. Liberal Libertarianism currently has no illustration. The homepage's general Feedback button contains a placeholder contact address; the result-page dialog is the implemented feedback workflow when using the local server.
+Some supporting text still refers to the earlier total of 103 results, while the current code contains 105. The homepage's general Feedback button contains a placeholder contact address; the result-page dialog is the implemented feedback workflow when using the local server.
 
 Suggestions about wording, branching, translations, or software behavior are welcome through [GitHub Issues](https://github.com/Lmx1217/Ideology_Test/issues). Including the language and answer sequence makes an issue easier to reproduce.
