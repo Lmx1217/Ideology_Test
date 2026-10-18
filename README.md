@@ -106,6 +106,12 @@ The server binds to `127.0.0.1`, validates host and origin headers, limits reque
 | [`i18n.test.cjs`](i18n.test.cjs) | Main-site localization and route regression tests |
 | `logic map English.xmind`, `logic map Chinese.xmind` | Visual documentation of the branches |
 
+## Third-party code
+
+The animated day/night toggle is adapted from the [simplified version of Xiumuzaidiao/Day-night-toggle-button](https://github.com/Xiumuzaidiao/Day-night-toggle-button/tree/master/白天黑夜切换按钮精简版), licensed under the ISC License. The upstream copyright notice is `Copyright(c)2024,Xiumuzaidiao`; the full license is preserved in [`daynight/LICENSE`](daynight/LICENSE) and in the CSS and JavaScript headers.
+
+This attribution covers the toggle markup in `index.html`, `test.html`, `note.html`, and `history.html`, plus its styles and behavior in `daynight/`. Local adaptations include positioning, scale, site theme colors, and an initial theme that follows the system preference.
+
 ## Verification
 
 Run the main-site checks:
