@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll('.fade-in-text');
+    const characterDelay = document.documentElement.lang === 'en' ? 1.5 : 4;
     let totalDelay = 0;
 
     elements.forEach((element, elementIndex) => {
@@ -31,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(() => {
                 span.classList.add('fade-in-text');
                 span.classList.remove('hidden');
-            }, totalDelay + (index * 5)); // 每个字的延迟时间
+            }, totalDelay + (index * characterDelay)); // 每个字的延迟时间
         });
 
-        totalDelay += spans.length * 5; // 计算总的延迟时间
+        totalDelay += spans.length * characterDelay; // 计算总的延迟时间
     });
 });

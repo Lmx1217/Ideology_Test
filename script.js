@@ -1,82 +1,62 @@
 let path = ['initial']; // 用于保存用户选择的路径
-
-let loadingTimeout;
-let loadingAnimationFrame;
-let previousPath = [];
-
-function showLoading(callback) {
-    const questionContainer = document.getElementById('question-container');
-    const optionsContainer = document.getElementById('options-container');
-    const loadingContainer = document.getElementById('loading-container');
-    const progressBar = document.querySelector('.progress');
-    const backButton = document.getElementById('back-button');
-
-    questionContainer.style.display = 'none';
-    optionsContainer.style.display = 'none';
-    loadingContainer.style.display = 'block';
-    progressBar.style.width = '0';
-
-    previousPath = [...path];  // 记录当前路径
-
-    backButton.style.display = 'block';
-
-    // 使用 requestAnimationFrame 确保动画开始
-    loadingAnimationFrame = requestAnimationFrame(() => {
-        const randomTime = Math.random() * 1500 + 500; // 随机时间在 0.5s 到 2s 之间
-        progressBar.style.transition = `width ${randomTime}ms ease`;
-        progressBar.style.width = '100%';
-
-        loadingTimeout = setTimeout(() => {
-            loadingContainer.style.display = 'none';
-            questionContainer.style.display = 'block';
-            optionsContainer.style.display = 'block';
-            backButton.style.display = path.length > 1 ? 'block' : 'none';
-            callback();
-        }, randomTime);
-    });
-}
+let selectedOptions = [];
 
 function selectOption(option) {
     console.log("Selected option:", option);
     console.log("Current path:", path);
-    showLoading(() => {
-        const currentQuestionKey = path[path.length - 1];
-        const currentQuestion = questions[currentQuestionKey];
-        const nextKey = currentQuestion.next[option];
+    const currentQuestionKey = path[path.length - 1];
+    const currentQuestion = questions[currentQuestionKey];
+    const nextKey = currentQuestion.next[option];
+    selectedOptions.push(option);
+    path.push(nextKey);
 
-        if (questions[nextKey].question) {
-            path.push(nextKey);
-            loadQuestion(nextKey);
-        } else if (questions[nextKey].result) {
-            document.getElementById('question').innerText = SiteI18n.resultText(nextKey, questions[nextKey].result);
+    if (questions[nextKey].question) {
+        loadQuestion(nextKey);
+    } else if (questions[nextKey].result) {
+        document.getElementById('answer-context').hidden = true;
+        const questionText = document.getElementById('question');
+        questionText.classList.add('result-text');
+        questionText.innerText = SiteI18n.resultText(nextKey, questions[nextKey].result);
 
-            const optionsContainer = document.getElementById('options-container');
-            optionsContainer.innerHTML = ''; // 清空选项
+        const optionsContainer = document.getElementById('options-container');
+        optionsContainer.innerHTML = ''; // 清空选项
 
-            // 插入按钮
-            const restartButton = document.createElement('button');
-            restartButton.className = 'option-button restart-button';
-            restartButton.innerText = SiteI18n.ui('restart');
-            restartButton.onclick = () => restartQuiz();
-            optionsContainer.appendChild(restartButton);
+        // 插入按钮
+        const restartButton = document.createElement('button');
+        restartButton.className = 'option-button restart-button';
+        restartButton.innerText = SiteI18n.ui('restart');
+        restartButton.onclick = () => restartQuiz();
+        optionsContainer.appendChild(restartButton);
 
-            const feedbackButton = document.createElement('button');
-            feedbackButton.id = 'result-feedback-button';
-            feedbackButton.className = 'option-button feedback-button';
-            feedbackButton.innerText = SiteI18n.ui('resultFeedback');
-            feedbackButton.onclick = () => ResultFeedback.open();
-            optionsContainer.appendChild(feedbackButton);
+        const feedbackButton = document.createElement('button');
+        feedbackButton.id = 'result-feedback-button';
+        feedbackButton.className = 'option-button feedback-button';
+        feedbackButton.innerText = SiteI18n.ui('resultFeedback');
+        feedbackButton.onclick = () => ResultFeedback.open();
+        optionsContainer.appendChild(feedbackButton);
 
-            const backButton = document.getElementById('back-button');
-            backButton.style.display = 'block';
-        }
-    });
+        const backButton = document.getElementById('back-button');
+        backButton.style.display = 'block';
+    }
 }
 
 function loadQuestion(questionKey) {
     ResultFeedback.reset();
     const questionData = questions[questionKey];
-    document.getElementById('question').innerText = SiteI18n.questionText(questionKey, questionData.question);
+    const questionText = document.getElementById('question');
+    questionText.classList.remove('result-text');
+    questionText.innerText = SiteI18n.questionText(questionKey, questionData.question);
+
+    const answerContext = document.getElementById('answer-context');
+    const previousAnswer = document.getElementById('previous-answer');
+    answerContext.hidden = path.length === 1;
+    previousAnswer.textContent = '';
+    if (path.length > 1) {
+        const previousQuestionKey = path[path.length - 2];
+        const previousOption = selectedOptions[selectedOptions.length - 1];
+        previousAnswer.textContent = SiteI18n.optionText(previousQuestionKey, previousOption,
+            questions[previousQuestionKey].options[previousOption]);
+    }
 
     const optionsContainer = document.getElementById('options-container');
     optionsContainer.innerHTML = '';
@@ -95,36 +75,15 @@ function loadQuestion(questionKey) {
 
 function restartQuiz() {
     path = ['initial'];
+    selectedOptions = [];
     loadQuestion('initial');
 }
 
 function goBack() {
-    // 清除加载进度条
-    clearTimeout(loadingTimeout);
-    cancelAnimationFrame(loadingAnimationFrame);
-
-    // 隐藏加载进度条并显示问题和选项
-    const questionContainer = document.getElementById('question-container');
-    const optionsContainer = document.getElementById('options-container');
-    const loadingContainer = document.getElementById('loading-container');
-    const backButton = document.getElementById('back-button');
-
-    loadingContainer.style.display = 'none';
-    questionContainer.style.display = 'block';
-    optionsContainer.style.display = 'block';
-
-    // 恢复到加载进度条前的路径
-    if (previousPath.length > 0) {
-        path = [...previousPath];
-        previousPath = []; // 清空 previousPath
-    } else {
-        path.pop();
-    }
-
-    const previousQuestion = path[path.length - 1];
-    loadQuestion(previousQuestion);
-
-    backButton.style.display = path.length > 1 ? 'block' : 'none';
+    if (path.length <= 1) return;
+    path.pop();
+    selectedOptions.pop();
+    loadQuestion(path[path.length - 1]);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

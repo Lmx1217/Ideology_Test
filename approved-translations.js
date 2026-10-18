@@ -27,12 +27,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "Feedback"
     },
     "social-democracy-01/H7": {
-        "zh": "English",
-        "en": "中文"
-    },
-    "social-democracy-01/U1": {
-        "zh": "计算中……",
-        "en": "Loading…"
+        "zh": "English / 英文",
+        "en": "中文 / Chinese"
     },
     "social-democracy-01/U2": {
         "zh": "后退",
@@ -41,6 +37,14 @@ window.APPROVED_TRANSLATIONS = {
     "social-democracy-01/U3": {
         "zh": "再来一次",
         "en": "Take the quiz again"
+    },
+    "quiz-01/previous-answer-label": {
+        "zh": "上一回答：",
+        "en": "Previous answer:"
+    },
+    "quiz-01/next-question-intro": {
+        "zh": "为你定制的下一题：",
+        "en": "Your next question, tailored to your answer:"
     },
     "social-democracy-01/Q1": {
         "zh": "国家应更多由政府管理还是民众管理？",
@@ -137,10 +141,6 @@ window.APPROVED_TRANSLATIONS = {
     "social-democracy-01/R1": {
         "zh": "结果：社会民主主义",
         "en": "Result: Social Democracy"
-    },
-    "social-democracy-01/X1": {
-        "zh": "任何问题或建议，请发送邮件至notavailable",
-        "en": "Found a problem or have a suggestion? Email [contact email]."
     },
     "social-democracy-01/X2": {
         "zh": "版本：",
@@ -1394,33 +1394,61 @@ window.APPROVED_TRANSLATIONS = {
         "zh": "•最后的结果对于越不了解政治的人可能越准确，因为不了解政治的人通常没有什么独特的观点组合，因此一共的103个结果大概率能包括这些人的想法",
         "en": "• The quiz may be more accurate for people who are less familiar with politics. Their views tend to fall into more common combinations, making them more likely to fit one of the quiz’s 103 possible results."
     },
+    "history-01/v1.7.3a-heading": {
+        "zh": "1.7.3a",
+        "en": "1.7.3a"
+    },
+    "history-01/v1.7.3a-instant-answers": {
+        "zh": "•移除答题过程中的加载进度条和等待。",
+        "en": "• Removed the progress bar and delays between questions."
+    },
+    "history-01/v1.7.3a-followup-prompts": {
+        "zh": "•新增“上一回答”和“为你定制的下一题”提示。",
+        "en": "• Added prompts showing your previous answer and introducing a follow-up question tailored to you."
+    },
+    "history-01/v1.7.3a-bilingual-switch": {
+        "zh": "•语言切换按钮同时显示中英文名称。",
+        "en": "• The language switcher now shows language names in both English and Chinese."
+    },
+    "history-01/v1.7.3a-instant-hover": {
+        "zh": "•按钮悬浮变色改为即时响应。",
+        "en": "• Button hover colors now change instantly."
+    },
+    "history-01/v1.7.3a-animations": {
+        "zh": "•加快“版本历史记录”卡片和“如何获得准确的结果”文字的入场动画。",
+        "en": "• Sped up the card animations in “Version History” and the text animations in “How to Get Accurate Results.”"
+    },
+    "history-01/v1.7.3a-result-style": {
+        "zh": "•增大结果页面文字并加入边框。",
+        "en": "• Made results more prominent with larger text and a border."
+    },
     "history-01/v1.7.2a-heading": {
-        "zh": "1.7.2a-2026.10.13",
-        "en": "1.7.2a — October 13, 2026"
+        "zh": "1.7.2a",
+        "en": "1.7.2a"
     },
     "history-01/v1.7.2a-result-images": {
         "zh": "•删除结果页面的图片。",
         "en": "• Removed images from result pages."
     },
     "history-01/v1.7.1a-heading": {
-        "zh": "1.7.1a-2026.10.15",
-        "en": "1.7.1a — October 15, 2026"
+        "zh": "1.7.1a",
+        "en": "1.7.1a"
     },
     "history-01/v1.7.1a-result-labels": {
         "zh": "•简化中英文结果页标题文案。",
         "en": "• Simplified the result page headings in Chinese and English."
     },
     "history-01/v1.7.0a-heading": {
-        "zh": "1.7.0a-2026.10.13",
-        "en": "1.7.0a — October 13, 2026"
+        "zh": "1.7.0a",
+        "en": "1.7.0a"
     },
     "history-01/v1.7.0a-english": {
         "zh": "•增加整个网站的英文本地化。",
         "en": "• Added full English support across the website."
     },
     "history-01/v1.6.0a-heading": {
-        "zh": "1.6.0a-2024.7.25",
-        "en": "1.6.0a — July 25, 2024"
+        "zh": "1.6.0a",
+        "en": "1.6.0a"
     },
     "history-01/v1.6.0a-results": {
         "zh": "•新增2个新结果（国家资本主义、中国特色社会主义）。",
@@ -1439,8 +1467,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Clarified the wording of “A mix of economic planning and market forces.”"
     },
     "history-01/v1.5.0a-heading": {
-        "zh": "1.5.0a-2024.7.18",
-        "en": "1.5.0a — July 18, 2024"
+        "zh": "1.5.0a",
+        "en": "1.5.0a"
     },
     "history-01/v1.5.0a-minigames": {
         "zh": "•添加小游戏。",
@@ -1459,8 +1487,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Added hover color changes to many buttons."
     },
     "history-01/v1.4.0a-heading": {
-        "zh": "1.4.0a-2024.7.13",
-        "en": "1.4.0a — July 13, 2024"
+        "zh": "1.4.0a",
+        "en": "1.4.0a"
     },
     "history-01/v1.4.0a-animations": {
         "zh": "•增加大量过渡动画（笔记部分动画存在初始显示全部文字的bug，暂时无法解决）。",
@@ -1471,8 +1499,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Organized the tips page into sections and revised some content."
     },
     "history-01/v1.3.0a-heading": {
-        "zh": "1.3.0a-2024.7.12",
-        "en": "1.3.0a — July 12, 2024"
+        "zh": "1.3.0a",
+        "en": "1.3.0a"
     },
     "history-01/v1.3.0a-chinese": {
         "zh": "•网站内容全面汉化。",
@@ -1487,8 +1515,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Updated How to Get Accurate Results."
     },
     "history-01/v1.2.0a-heading": {
-        "zh": "1.2.0a-2024.7.11",
-        "en": "1.2.0a — July 11, 2024"
+        "zh": "1.2.0a",
+        "en": "1.2.0a"
     },
     "history-01/v1.2.0a-history": {
         "zh": "•在主页添加”版本历史纪录”按钮。",
@@ -1499,24 +1527,24 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Set page containers to a maximum width of 90% so they fit on mobile screens."
     },
     "history-01/v1.1.1a-heading": {
-        "zh": "1.1.1a-2024.7.11",
-        "en": "1.1.1a — July 11, 2024"
+        "zh": "1.1.1a",
+        "en": "1.1.1a"
     },
     "history-01/v1.1.1a-images": {
         "zh": "•将笔记中的表情符号换成了图片，以确保在所有系统环境下正常显示。",
         "en": "• Replaced emoji on the tips page with images so they display correctly across operating systems."
     },
     "history-01/v1.1.0a-heading": {
-        "zh": "1.1.0a-2024.7.10",
-        "en": "1.1.0a — July 10, 2024"
+        "zh": "1.1.0a",
+        "en": "1.1.0a"
     },
     "history-01/v1.1.0a-home": {
         "zh": "•增加门户网站（切换英文版本暂时不可用）。",
         "en": "• Added a home page. Switching to English is not yet available in this release."
     },
     "history-01/v1.0.1a-heading": {
-        "zh": "1.0.1a-2024.7.10",
-        "en": "1.0.1a — July 10, 2024"
+        "zh": "1.0.1a",
+        "en": "1.0.1a"
     },
     "history-01/v1.0.1a-structure": {
         "zh": "•优化文件结构，运行和debug效率大幅增加。",
@@ -1527,80 +1555,80 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Changed the site’s main title to Ideology Test."
     },
     "history-01/v1.0.0b-heading": {
-        "zh": "1.0.0b-2024.7.9",
-        "en": "1.0.0b — July 9, 2024"
+        "zh": "1.0.0b",
+        "en": "1.0.0b"
     },
     "history-01/v1.0.0b-typo": {
         "zh": "•修复了在第一个问题中的“由”错误的写成了“有”。",
         "en": "• Fixed a typo in the first question’s Chinese text."
     },
     "history-01/v1.0.0a-heading": {
-        "zh": "1.0.0a-2024.7.9",
-        "en": "1.0.0a — July 9, 2024"
+        "zh": "1.0.0a",
+        "en": "1.0.0a"
     },
     "history-01/v1.0.0a-results": {
         "zh": "•完成最初设计的所有103种结果。",
         "en": "• Completed all 103 originally planned results."
     },
     "history-01/v0.6.0b-heading": {
-        "zh": "0.6.0b-2024.6.24",
-        "en": "0.6.0b — June 24, 2024"
+        "zh": "0.6.0b",
+        "en": "0.6.0b"
     },
     "history-01/v0.6.0b-typos": {
         "zh": "•修复了在部分题目和选项中的“应该”错误的写成了“因该”。",
         "en": "• Fixed typos in several Chinese questions and answer choices."
     },
     "history-01/v0.6.0a-heading": {
-        "zh": "0.6.0a-2024.6.23",
-        "en": "0.6.0a — June 23, 2024"
+        "zh": "0.6.0a",
+        "en": "0.6.0a"
     },
     "history-01/v0.6.0a-results": {
         "zh": "•完成所有自由左翼27个结果。",
         "en": "• Completed all 27 libertarian-left results."
     },
     "history-01/v0.5.1a-heading": {
-        "zh": "0.5.1a-2024.6.10",
-        "en": "0.5.1a — June 10, 2024"
+        "zh": "0.5.1a",
+        "en": "0.5.1a"
     },
     "history-01/v0.5.1a-responsive": {
         "zh": "•添加根据设备大小改变内容尺寸的功能。",
         "en": "• Added responsive sizing to adapt content to different screen sizes."
     },
     "history-01/v0.5.0a-heading": {
-        "zh": "0.5.0a-2024.6.7",
-        "en": "0.5.0a — June 7, 2024"
+        "zh": "0.5.0a",
+        "en": "0.5.0a"
     },
     "history-01/v0.5.0a-results": {
         "zh": "•完成所有威权左翼25个结果。",
         "en": "• Completed all 25 authoritarian-left results."
     },
     "history-01/v0.4.2b-heading": {
-        "zh": "0.4.2b-2024.6.3",
-        "en": "0.4.2b — June 3, 2024"
+        "zh": "0.4.2b",
+        "en": "0.4.2b"
     },
     "history-01/v0.4.2b-backfix": {
         "zh": "•修复如果在结果页面点击“返回”按钮返回上一个问题后“返回”按钮失效的问题。",
         "en": "• Fixed an issue where Back stopped working after returning from the results page to the previous question."
     },
     "history-01/v0.4.2a-heading": {
-        "zh": "0.4.2a-2024.6.3",
-        "en": "0.4.2a — June 3, 2024"
+        "zh": "0.4.2a",
+        "en": "0.4.2a"
     },
     "history-01/v0.4.2a-console": {
         "zh": "•添加在浏览器日志中显示所选路径的功能。",
         "en": "• Added logging of the selected answer path to the browser console."
     },
     "history-01/v0.4.1a-heading": {
-        "zh": "0.4.1a-2021.6.1",
-        "en": "0.4.1a — June 1, 2021"
+        "zh": "0.4.1a",
+        "en": "0.4.1a"
     },
     "history-01/v0.4.1a-back": {
         "zh": "•“返回”按钮将不在第一个问题中显示。",
         "en": "• The Back button no longer appears on the first question."
     },
     "history-01/v0.4.0a-heading": {
-        "zh": "0.4.0a-2024.6.1",
-        "en": "0.4.0a — June 1, 2024"
+        "zh": "0.4.0a",
+        "en": "0.4.0a"
     },
     "history-01/v0.4.0a-back": {
         "zh": "•新增“返回”按钮。",
@@ -1611,8 +1639,8 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Completed all 28 authoritarian-right results."
     },
     "history-01/v0.3.0a-heading": {
-        "zh": "0.3.0a-2024.5.30",
-        "en": "0.3.0a — May 30, 2024"
+        "zh": "0.3.0a",
+        "en": "0.3.0a"
     },
     "history-01/v0.3.0a-restart": {
         "zh": "•新增“再来一次”按钮。",
@@ -1623,16 +1651,16 @@ window.APPROVED_TRANSLATIONS = {
         "en": "• Restructured the quiz logic to make it easier to add new answer paths and improve performance."
     },
     "history-01/v0.2.0a-heading": {
-        "zh": "0.2.0a-2024.5.29",
-        "en": "0.2.0a — May 29, 2024"
+        "zh": "0.2.0a",
+        "en": "0.2.0a"
     },
     "history-01/v0.2.0a-results": {
         "zh": "•新增4个新结果（重商主义、俾斯麦主义、LGBT保守主义、反动主义）。",
         "en": "• Added four results: Mercantilism, Bismarckism, LGBT Conservatism, and Reactionary Politics."
     },
     "history-01/v0.1.0a-heading": {
-        "zh": "0.1.0a-2024.5.29",
-        "en": "0.1.0a — May 29, 2024"
+        "zh": "0.1.0a",
+        "en": "0.1.0a"
     },
     "history-01/v0.1.0a-style": {
         "zh": "•确定网站UI风格",

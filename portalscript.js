@@ -45,7 +45,7 @@ function history() {
 }
 
 function giveFeedback() {
-    alert(SiteI18n.ui('feedbackMessage'));
+    ResultFeedback.open();
 }
 
 function switchLanguage() {
@@ -55,7 +55,7 @@ function switchLanguage() {
 }
 
 function showVersion() {
-    alert(SiteI18n.ui('versionLabel') + ' alpha-1.7.2a-2026.10.13');
+    alert(SiteI18n.ui('versionLabel') + ' 1.7.3a');
 }
 
 function games() {

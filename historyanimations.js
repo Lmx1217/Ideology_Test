@@ -4,6 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             version.style.opacity = '1';
             version.style.transform = 'scale(1)';
-        }, index * 150);
+        }, index * 100);
     });
 });

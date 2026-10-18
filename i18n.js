@@ -8,10 +8,10 @@
         versionHistory: 'social-democracy-01/H5',
         feedback: 'social-democracy-01/H6',
         switchLanguage: 'social-democracy-01/H7',
-        loading: 'social-democracy-01/U1',
         back: 'social-democracy-01/U2',
         restart: 'social-democracy-01/U3',
-        feedbackMessage: 'social-democracy-01/X1',
+        previousAnswerLabel: 'quiz-01/previous-answer-label',
+        nextQuestionIntro: 'quiz-01/next-question-intro',
         versionLabel: 'social-democracy-01/X2',
         notesTitle: 'notes-01/title',
         notesTestTips: 'notes-01/test-tips',
@@ -29,6 +29,13 @@
         notesTitleActions: 'notes-01/title-actions',
         notesResultsHeading: 'notes-01/results-heading',
         notesResultsNote: 'notes-01/results-note',
+        history173aHeading: 'history-01/v1.7.3a-heading',
+        history173aInstantAnswers: 'history-01/v1.7.3a-instant-answers',
+        history173aFollowupPrompts: 'history-01/v1.7.3a-followup-prompts',
+        history173aBilingualSwitch: 'history-01/v1.7.3a-bilingual-switch',
+        history173aInstantHover: 'history-01/v1.7.3a-instant-hover',
+        history173aAnimations: 'history-01/v1.7.3a-animations',
+        history173aResultStyle: 'history-01/v1.7.3a-result-style',
         history172aHeading: 'history-01/v1.7.2a-heading',
         history172aResultImages: 'history-01/v1.7.2a-result-images',
         history171aHeading: 'history-01/v1.7.1a-heading',
@@ -448,6 +455,11 @@
     const language = resolveLanguage();
 
     const feedbackCopy = {
+        generalFeedbackLabel: { zh: '你想反馈什么？', en: 'What would you like to share?' },
+        generalFeedbackHint: {
+            zh: '可以描述遇到的问题或提出建议（最多 5000 字）。',
+            en: 'Report a problem or share a suggestion (up to 5,000 characters).'
+        },
         resultFeedback: { zh: '结果不准确？', en: 'My result seems inaccurate' },
         feedbackLabel: { zh: '你觉得哪里不准确？', en: 'What seems inaccurate?' },
         feedbackHint: {

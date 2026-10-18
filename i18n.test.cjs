@@ -7,7 +7,7 @@ const vm = require('node:vm');
 function load({ search = '', saved = null, blockedStorage = false } = {}) {
     const storage = new Map(saved === null ? [] : [['homepageLanguage', saved]]);
     const elements = ['title', 'startTest', 'miniGames', 'notes', 'versionHistory',
-        'feedback', 'switchLanguage', 'loading', 'back'].map(key => ({ dataset: { i18n: key } }));
+        'feedback', 'switchLanguage', 'back'].map(key => ({ dataset: { i18n: key } }));
     const context = vm.createContext({
         URLSearchParams,
         window: {
@@ -53,10 +53,10 @@ test('homepage and test controls use the approved selection, including the alter
     assert.equal(storage.get('homepageLanguage'), 'en');
     assert.deepEqual(elements.map(element => element.textContent), [
         'Where You Stand?', 'Start', 'Mini Games', 'How to Get Accurate Results',
-        'Version History', 'Feedback', '中文', 'Loading…', 'Back'
+        'Version History', 'Feedback', '中文 / Chinese', 'Back'
     ]);
     assert.equal(i18n.ui('restart'), 'Take the quiz again');
-    assert.equal(i18n.ui('feedbackMessage'), 'Found a problem or have a suggestion? Email [contact email].');
+    assert.equal(i18n.ui('generalFeedbackLabel'), 'What would you like to share?');
     assert.equal(i18n.ui('versionLabel'), 'Version:');
 });
 
@@ -304,17 +304,16 @@ test('Chinese mode retains every original question, answer, result and control',
         }
     }
     assert.equal(i18n.ui('title'), '意识形态测试');
-    assert.equal(i18n.ui('switchLanguage'), 'English');
+    assert.equal(i18n.ui('switchLanguage'), 'English / 英文');
     assert.equal(i18n.ui('restart'), '再来一次');
-    assert.equal(i18n.ui('loading'), '计算中……');
 });
 
 test('production copy contains only source/selected-English pairs; every approved entry is used', () => {
     const { copy, i18n, questions } = load();
     const used = new Set();
     for (const key of ['title', 'startTest', 'miniGames', 'notes', 'versionHistory', 'feedback',
-        'switchLanguage', 'loading', 'back', 'restart', 'feedbackMessage', 'versionLabel']) used.add(i18n.ui(key));
-    for (const page of ['note.html', 'history.html']) {
+        'switchLanguage', 'back', 'restart', 'versionLabel']) used.add(i18n.ui(key));
+    for (const page of ['index.html', 'note.html', 'history.html', 'test.html']) {
         const html = fs.readFileSync(path.join(__dirname, page), 'utf8');
         for (const [, key] of html.matchAll(/data-i18n(?:-alt)?="([^"]+)"/g)) used.add(i18n.ui(key));
     }

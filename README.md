@@ -30,14 +30,14 @@ node server.cjs
 
 Open the [English homepage](http://127.0.0.1:3000/?lang=en) or the [Chinese homepage](http://127.0.0.1:3000/?lang=zh). There are no npm packages to install and no build step. The server and tests were verified with Node.js v24.14.1.
 
-For the quiz alone, opening `index.html` directly in a modern browser also works. The quiz can be served as a static website; submitting result feedback requires the included server. If port 3000 is occupied, set `PORT` to another port before starting it.
+For the quiz alone, opening `index.html` directly in a modern browser also works. The quiz can be served as a static website; submitting feedback requires the included server. If port 3000 is occupied, set `PORT` to another port before starting it.
 
 ## What the site includes
 
 - **Branching questions:** later questions depend on earlier answers, with Back and restart controls for exploring other choices.
-- **Bilingual quiz and supporting pages:** English and Chinese text for the homepage, questions, answers, results, guidance, version history, and result-feedback dialog.
+- **Bilingual quiz and supporting pages:** English and Chinese text for the homepage, questions, answers, results, guidance, version history, and feedback dialogs.
 - **Responsive presentation:** layouts adapt to smaller screens, and an animated day/night switch changes the theme. The initial theme follows the system preference.
-- **Result feedback:** a dialog lets users describe a mismatch or suggest a more fitting result, with input validation and submission status messages.
+- **Feedback:** the homepage dialog accepts problems and suggestions, while the result-page dialog accepts result feedback. Both share input validation, submission status messages, and local file storage.
 - **Supporting material:** a guide to taking the quiz, a version history, and English and Chinese XMind logic maps.
 - **A separate Snake game:** a Canvas-based game with keyboard and on-screen controls, scoring, and optional boundary collisions. Its current interface is in English.
 
@@ -45,7 +45,7 @@ For the quiz alone, opening `index.html` directly in a modern browser also works
 
 [`logical.js`](logical.js) stores both questions and results in one keyed object. A question contains its text, an `options` map, and a `next` map connecting each option to another node. A terminal node contains a result label.
 
-[`script.js`](script.js) starts at `initial`, renders the current question, and follows the selected option's destination. The same sequence of answers always produces the same result. Classification uses these authored rules; it does not calculate a numerical ideology score or use a trained model. The progress animation between questions is a visual transition.
+[`script.js`](script.js) starts at `initial`, renders the current question, and immediately follows the selected option's destination. The same sequence of answers always produces the same result. Classification uses these authored rules; it does not calculate a numerical ideology score or use a trained model.
 
 For example, the following fragment appears after the user has followed the branch toward private ownership of the means of production. Labels are shortened here for readability:
 
@@ -87,7 +87,7 @@ Open `translation-review/index.html` directly, or visit [the review tool](http:/
 
 Quiz navigation runs in the browser, and the current path is held in memory. Reloading starts a new attempt. The main site stores its language preference locally.
 
-The optional [`server.cjs`](server.cjs) uses Node.js built-in modules to serve the site and accept `POST /api/feedback`. The dialog sends only the entered feedback text, up to 5,000 characters. Each submission becomes a UTF-8 `.txt` file in `feedback/` on the machine running the server. That directory is excluded from public file serving, and submission files are ignored by Git.
+The optional [`server.cjs`](server.cjs) uses Node.js built-in modules to serve the site and accept `POST /api/feedback`. The homepage and result-page dialogs share [`feedback.js`](feedback.js) and [`feedback.css`](feedback.css). They send only the entered feedback text, up to 5,000 characters. Each submission becomes a UTF-8 `.txt` file in `feedback/` on the machine running the server. That directory is excluded from public file serving, and submission files are ignored by Git.
 
 The server binds to `127.0.0.1`, validates host and origin headers, limits request size, and checks resolved file paths before serving them. It is configured for local use; a public feedback deployment would require separate hosting and server configuration.
 
@@ -98,7 +98,7 @@ The server binds to `127.0.0.1`, validates host and origin headers, limits reque
 | [`index.html`](index.html), [`portalscript.js`](portalscript.js) | Homepage, language switch, navigation, and version display |
 | [`test.html`](test.html), [`script.js`](script.js), [`logical.js`](logical.js) | Quiz interface, navigation state, and decision tree |
 | [`approved-translations.js`](approved-translations.js), [`i18n.js`](i18n.js) | Reviewed bilingual text and context-specific rendering |
-| [`feedback.js`](feedback.js), [`server.cjs`](server.cjs) | Result-feedback dialog and local storage endpoint |
+| [`feedback.js`](feedback.js), [`feedback.css`](feedback.css), [`server.cjs`](server.cjs) | Shared feedback dialogs and local storage endpoint |
 | [`note.html`](note.html), [`history.html`](history.html) | Quiz guidance and release history |
 | Root CSS files and [`daynight/`](daynight/) | Page layouts, transitions, and themes |
 | [`translation-review/`](translation-review/) | Translation review, persistence, export/import, and its tests |
@@ -136,7 +136,7 @@ The [in-app version history](history.html) records the project's development in 
 | July 2024 | Original 103-result milestone, homepage and guidance updates, themes, mini-game, then two additional results |
 | October 2026 | English localization, translation-review workflow, local result feedback, and simplified result headings |
 
-The version currently displayed by the homepage is **alpha-1.7.2a**, dated October 13, 2026. This release removes images from result pages.
+The current version is **1.7.3a**. This release removes quiz loading delays, adds context for follow-up questions, introduces bilingual language-switcher labels, and improves hover feedback and animation speed.
 
 ## Result presentation
 
@@ -146,6 +146,6 @@ Current result pages display text only. Earlier versions included third-party il
 
 This is an exploratory project for engaging with political ideas. A short decision tree simplifies complex and sometimes overlapping beliefs, and its results reflect the assumptions built into its questions and branches. No empirical validation of classification accuracy is included in the repository. The result set also contains fictional and internet-community labels alongside historical and contemporary political traditions; inclusion is not an endorsement.
 
-Some supporting text still refers to the earlier total of 103 results, while the current code contains 105. The homepage's general Feedback button contains a placeholder contact address; the result-page dialog is the implemented feedback workflow when using the local server.
+Some supporting text still refers to the earlier total of 103 results, while the current code contains 105. Feedback submissions from both the homepage and result page require the local server.
 
 Suggestions about wording, branching, translations, or software behavior are welcome through [GitHub Issues](https://github.com/Lmx1217/Ideology_Test/issues). Including the language and answer sequence makes an issue easier to reproduce.
